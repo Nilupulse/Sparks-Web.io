@@ -19,7 +19,9 @@ body p { font-size: 12px; line-height: 20px; letter-spacing: 0.18px; color: #436
 
 body .btn { letter-spacing: 1.5px; text-transform: uppercase; padding: 12px 25px; font-size: 12px; border-radius: 100px; }
 body .btn-secondary { background: #43646D; }
+body .btn-secondary:hover, body .btn-secondary:active, body .btn-secondary:focus { background: #495c69; }
 body .btn-outline-secondary { border-color: #43646D; color: #43646D; background: transparent !important; }
+body .btn-outline-secondary:hover, body .btn-outline-secondary:active, body .btn-outline-secondary:focus { border-color: #495C69; color: #495C69; }
 
 
 /************ START Navigation ************/
@@ -44,6 +46,7 @@ section { position: relative; padding: 5%; }
 #home .logoWrapper { margin: 0; display: block; position: relative; }
 #home .logoWrapper * { display: block; width: 100%; }
 #home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 16px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; }
+#home .logoWrapper .btn-link:hover, #home .logoWrapper .btn-link:active, #home .logoWrapper .btn-link:focus { color: #495C69; }
 
   #images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
   #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
@@ -87,11 +90,11 @@ section { position: relative; padding: 5%; }
 #floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
 #floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 500px 0 0 500px; }
 
-#specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 118px 90px; }
+#specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 100px 90px; }
 #specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 500px 0 0 500px; }
 #specs p { padding-right: 100px; margin-bottom: 35px; }
 
-#inclusions { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); padding: 118px 90px; }
+#inclusions { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); padding: 100px 90px; }
 #inclusions::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
 #inclusions .carousel { position: relative; overflow: hidden; width: auto; }
 #inclusions .carousel-item:first-child img { border-radius: 20px 0 0 20px; overflow: hidden; } 
