@@ -85,7 +85,7 @@
   #images .show-neighbors .carousel-item-next .item__third > div,
   #images .show-neighbors .carousel-item-prev .item__third > div { background: transparent !important; }
 
-  #images .carousel-item .item__third img { -webkit-filter: grayscale(100%) opacity(60%); filter: grayscale(100%) opacity(60%); transition: all 1s ease-out 2s; } 
+  #images .carousel-item .item__third img { -webkit-filter: grayscale(100%) opacity(60%); filter: grayscale(100%) opacity(60%); transition: filter 1s ease-out 2s; } 
   #images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0) opacity(100%); filter: grayscale(0) opacity(100%); } 
   #images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
   #images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
