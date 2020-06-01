@@ -12,16 +12,17 @@
 /************ END New Fonts ************/
 
 /************ START Common Styles ************/
+  html { scroll-behavior: smooth; }
   html, body { height: 100%; }
   body { color: #2b435d; font-size: 18px; font-family: Limerick-Regular; }
-  body section { position: relative; padding: 5%; }
+  body section { position: relative; padding: 5%; overflow: hidden; }
   body .container-fluid { overflow-y: hidden; }
   body .row{ z-index: 1; position: relative; }
-  body h4 { font-size: 14px; line-height: 24px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; }
-  body h5 { font-size: 9px; line-height: 20px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; }
-  body p { font-size: 12px; line-height: 20px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; }
+  body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
+  body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; }
+  body p { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; }
 
-  body .btn { letter-spacing: 1.5px; text-transform: uppercase; padding: 12px 25px; font-size: 12px; border-radius: 100px; }
+  body .btn { letter-spacing: 2px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
   body .btn-secondary { background: #43646D; }
   body .btn-secondary:hover, body .btn-secondary:active, body .btn-secondary:focus { background: #495c69; }
   body .btn-outline-secondary { border-color: #43646D; color: #43646D; background: transparent !important; }
@@ -30,43 +31,47 @@
 
 /************ START Navigation ************/
   body .mainMenu { padding: 0; }
-  body .mainMenu .navbar-nav { max-width: 716px; }
-  body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 16px; padding: 20px; }
+  body .mainMenu .navbar-nav { max-width: 1168px; }
+  body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 28px; }
   body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
 /************ END Navigation ************/
 
-
 /************ START Section Home ************/
-  #home::before { content: ""; background: #d5ae9f; width: 70%; height: 100%; position: absolute; top: 0; left: 30%; border-radius: 0 500px 500px 0; }
-  #home::after { content: ""; background: #495c69; width: 30%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
+  #home::before { content: ""; background: #495c69; width: 30%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: 0; }
+  #home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -2; }
 
-  #home .homeLeftBack { position: absolute; width: 50%; height: 100%; z-index: -1; left: 0; top: 0; overflow: hidden; }
-  #home .homeLeftBack::before { content: ""; background: #43646d; width: 100%; height: 50%; position: absolute; top: 0; left: 0; border-radius: 0 0 500px 500px; }
-  #home .homeLeftBack::after { content: ""; background: #eee3db; width: 100%; height: 50%; position: absolute; bottom: 0; left: 0; border-radius: 500px 500px 0 0; }
+  #home .homeTopLeftBack { position: absolute; width: 30%; height: 50%; left: 0; top: 0; overflow: hidden; z-index: -1; }
+  #home .homeTopLeftBack::before { content: ""; background: #43646d; width: 100%; height: 200%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
 
-  #home .homeRightBack { position: absolute; width: 50%; height: 100%; z-index: -1; right: 0; top: 0; overflow: hidden; }
-  #home .homeRightBack::before { content: ""; background: #eee3db; width: 100%; height: 50%; position: absolute; top: 0; right: -50%; border-radius: 0 0 500px 500px; }
-  #home .homeRightBack::after { content: ""; background: #43646d; width: 100%; height: 50%; position: absolute; bottom: 0; right: -50%; border-radius: 500px 500px 0 0; }
+  #home .homeBottomLeftBack { position: absolute; width: 30%; height: 50%; left: 0; bottom: 0; overflow: hidden; z-index: -1; }
+  #home .homeBottomLeftBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0; }
+
+  #home .homeTopRightBack { position: absolute; width: 30%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -3; }
+  #home .homeTopRightBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
+  
+  #home .homeBottomRightBack { position: absolute; width: 30%; height: 50%; right: 0; bottom: 0; overflow: hidden; z-index: -3; }
+  #home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
 
   #home .logoWrapper { margin: 0; display: block; position: relative; }
   #home .logoWrapper * { display: block; width: 100%; }
-  #home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 16px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; }
+  #home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; }
   #home .logoWrapper .btn-link:hover, #home .logoWrapper .btn-link:active, #home .logoWrapper .btn-link:focus { color: #495C69; }
 /************ END Section Home ************/
 
 /************ START Section Images ************/
   #images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
-  #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
+  #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 
   #images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
-  #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
+  #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 
   #images .show-neighbors { overflow: hidden; }
 
-  #images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 70px 0 90px }
+  #images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 95px 0 166px }
   #images .show-neighbors .carousel-item-next:not(.carousel-item-left),
   #images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
-  #images .show-neighbors .carousel-item-prev:not(.carousel-item-right), #images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 180px), 0, 0); transform: translate3d(calc(-33.33% + 180px), 0, 0); }
+  #images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
+  #images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 180px), 0, 0); transform: translate3d(calc(-33.33% + 180px), 0, 0); }
 
   #images .show-neighbors .item__third { float: left; position: relative; width: calc(33.33% - 180px); }
   #images .carousel-item:first-child .item__third:first-child, 
@@ -83,11 +88,11 @@
   #images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
   #images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
 
-  #images .carousel-caption { left: 0; bottom: -90px; text-align: left; height: 90px; opacity: 0; }
+  #images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; }
   #images .show-neighbors .item__third:nth-child(2) .carousel-caption { opacity: 1; }
-  #images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 20px; }
-  #images .carousel-caption h5 small { display: block; font-size: 14px; letter-spacing: 1px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
-  #images .carousel-caption p { letter-spacing: 1px; font-size: 11px; line-height: 16px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
+  #images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; }
+  #images .carousel-caption h5 small { display: block; font-size: 20px; line-height: 28px; letter-spacing: 0.4px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
+  #images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 25px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
     
   #images .show-neighbors .carousel-control-prev,
   #images .show-neighbors .carousel-control-next { width: 90px; z-index: 11; opacity: 0; }
@@ -95,58 +100,117 @@
 
 /************ START Section FloorPlans ************/
   #floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
-  #floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 500px 0 0 500px; }
+  #floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
 /************ END Section FloorPlans ************/
 
 /************ START Section Specs ************/
   #specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 100px 90px; }
-  #specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 500px 0 0 500px; }
+  #specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
   
+  #specs .imageWrapper { position: relative; border-radius: 500px; overflow: hidden; }
   #specs .tooltipWrapper { position: relative; }
+  #specs .tooltipWrapper.imageCircle { position: absolute; left: 0; width: 100%; top: 0; }
+  #specs .circleBottom .tooltipWrapper.imageCircle { top: auto; bottom: 0; }
+  #specs .circleMiddle .tooltipWrapper.imageCircle { top: 35%; bottom: auto; height: 30%; }
   #specs .tooltipWrapper img { position: relative; z-index: 1; }
   #specs .tooltipWrapper a { width: 18px; height: 18px; background: #fff; left: calc(50% - 9px); opacity: 1; border: 4px solid #70707033; border-radius: 100px; top: calc(50% - 9px); position: absolute; z-index: 99; }
+  #specs .circleMiddle .tooltipWrapper:first-child a:first-child { top: calc(25% - 9px); }
+  #specs .circleMiddle .tooltipWrapper:first-child a:last-child { top: calc(75% - 9px); }
   .tooltip { background-color: transparent; opacity: 1!important; }
   .tooltip > .tooltip-inner { background-color: #fff !important; letter-spacing: 0.28px; color: #43646D; opacity: 1 !important; font-size: 10px; }
   .tooltip .arrow:before { border-top-color: white;  border-right-color: transparent;  border-bottom-color: white;  border-left-color: transparent; }
-  #specs p { padding-right: 100px; margin-bottom: 35px; }
+  #specs p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
 /************ END Section Specs ************/
 
 /************ START Section Inclusions ************/
   #inclusions { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); padding: 100px 90px; }
-  #inclusions::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
+  #inclusions::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
   #inclusions .carousel { position: relative; overflow: hidden; width: auto; }
   #inclusions .carousel-item:first-child img { border-radius: 20px 0 0 20px; overflow: hidden; } 
   #inclusions .carousel-item:last-child img { border-radius: 0 20px 20px 0; overflow: hidden; }
-  #inclusions p { padding-right: 100px; margin-bottom: 35px; }
+  #inclusions p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
 /************ END Section Inclusions ************/  
 
 /************ START Section About ************/
-  #about { background: linear-gradient(to bottom, #c7b4a6 0%,#c7b4a6 50%,#eee3db 50%,#eee3db 100%); padding: 60px 90px; }
-  #about::before { content: ""; background: #eee3db; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 500px 500px 0; }
-  #about::after { content: ""; background: #d5ae9f; width: 75%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 500px 0 0 500px; z-index: 0; }
-  #about .card {  border-radius: 0; border: none;}
-  #about .card .card-body { padding: 10px; max-height: calc(100% - 105px); }
+  #about { background: linear-gradient(to bottom, #c7b4a6 0%,#c7b4a6 50%,#eee3db 50%,#eee3db 100%); padding: 95px 118px; }
+  #about::before { content: ""; background: #eee3db; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
+  #about::after { content: ""; background: #d5ae9f; width: 75%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
+  #about .container-fluid { position: relative; z-index: 1; overflow: visible; }
+  #about .card { border-radius: 0; border: none;}
+  #about .card .card-body { padding: 10px; max-height: calc(100% - 150px); }
   #about .card .mCustomScrollbar { overflow: auto; }
-  #about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { margin-right: 30px; padding: 27px; }
+  #about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { margin-right: 30px; padding: 46px 50px; }
   #about .card .mCustomScrollbar .mCSB_draggerRail { width: 9px; background: #e5e5e5; margin-right: 0; }
   #about .card .mCustomScrollbar .mCSB_dragger_bar { width: 9px; background: #c7b4a6; margin-right: 0; }
   #about .card .col:first-child { padding-right: 20px; }
   #about .card .col:last-child { padding-left: 20px; }
-  #about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 105px; }
-  #about .card .card-footer .img-fluid { max-height: 35px; }
-  #about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.5px; font-size: 9px; }
+  #about .card h4 { margin-bottom: 15px; }
+  #about .card p { margin-bottom: 40px; }
+  #about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
+  #about .card .card-footer .img-fluid { max-height: 59px; }
+  #about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: 11px; line-height: 24px; }
   #about .copyrightText img { width: 30px; margin-top: -4px; }
 /************ END Section About ************/
 
-@media (max-width: 1199.98px) {
 
-}
+/************ START Animation ************/
+  .animation-element { transform: translateY(100px); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.5s; }
+  .animation-element.in-view { opacity: 1; transform: translateY(0px); visibility: visible; }
 
-@media (max-width: 991.98px) {
+  #home.animation-element { transform: none !important; visibility: visible; opacity: 1; transition: none; }
+  #home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0s; }
+  #home.animation-element.in-view::after { opacity: 1; transform: translateX(0); visibility: visible; }
+  #home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0.3s; }
+  #home.animation-element.in-view::before { opacity: 1; transform: translateX(0); visibility: visible; }
   
+  #home .homeTopLeftBack.animation-element, #home .homeTopRightBack.animation-element, #home .homeBottomLeftBack.animation-element, #home .homeBottoRightBack.animation-element { transform: none; visibility: visible; opacity: 1; transition: none; }
+  #home .homeTopLeftBack.animation-element::before, #home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0.7s; }
+  #home .homeTopLeftBack.animation-element.in-view::before, #home .homeTopRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+  #home .homeBottomLeftBack.animation-element::before, #home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0.7s; }
+  #home .homeBottomLeftBack.animation-element.in-view::before, #home .homeBottomRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+  body .mainMenu.animation-element { transform: none !important; visibility: hidden; opacity: 0; transition: all 0.5s ease-out 1.3s; }
+  body .mainMenu.animation-element.in-view { opacity: 1; visibility: visible;  }
+  #home .logoWrapper.animation-element { transform: none !important; visibility: hidden; opacity: 0; transition: all 0.5s ease-out 1.5s; }
+  #home .logoWrapper.animation-element.in-view { opacity: 1; visibility: visible;  }
+/************ END Animation ************/
+
+/*Large devices (desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+  body h4 { font-size: 14px; line-height: 24px; }
+  body h5 { font-size: 9px; line-height: 20px; }
+  body p { font-size: 12px; line-height: 20px; }
+
+  body .btn { letter-spacing: 1.5px; font-size: 12px; line-height: 20px; padding: 12px 25px; }
+
+  body .mainMenu .navbar-nav { max-width: 716px; }
+  body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
+
+  #home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
+
+  #images .show-neighbors .carousel-inner { padding: 70px 0 90px }
+  #images .carousel-caption { bottom: -90px; height: 90px; }
+  #images .carousel-caption h5 { font-size: 20px; line-height: 26px; }
+  #images .carousel-caption p { letter-spacing: 1px; font-size: 11px; line-height: 16px; }
+  #images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
+
+  #specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
+
+  #inclusions p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
+
+  #about { padding: 60px 90px; }
+  #about .card .card-body { max-height: calc(100% - 105px); }
+  #about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { padding: 27px; }
+  #about .card .card-footer { height: 105px; }
+  #about .card .card-footer .img-fluid { max-height: 35px; }
+  #about .copyrightText { letter-spacing: 1.5px; font-size: 9px; line-height: 22px; }
+
 }
 
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { ... }
 
-@media (max-width: 767.98px) {
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { ... }
 
-}
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { ... }
