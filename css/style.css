@@ -85,6 +85,8 @@
   #images .show-neighbors .carousel-item-next .item__third > div,
   #images .show-neighbors .carousel-item-prev .item__third > div { background: transparent !important; }
 
+  #images .carousel-item .item__third img { -webkit-filter: grayscale(100%) opacity(60%); filter: grayscale(100%) opacity(60%); transition: all 1s ease-out 2s; } 
+  #images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0) opacity(100%); filter: grayscale(0) opacity(100%); } 
   #images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
   #images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
 
@@ -113,11 +115,12 @@
   #specs .circleBottom .tooltipWrapper.imageCircle { top: auto; bottom: 0; }
   #specs .circleMiddle .tooltipWrapper.imageCircle { top: 35%; bottom: auto; height: 30%; }
   #specs .tooltipWrapper img { position: relative; z-index: 1; }
-  #specs .tooltipWrapper a { width: 18px; height: 18px; background: #fff; left: calc(50% - 9px); opacity: 1; border: 4px solid #70707033; border-radius: 100px; top: calc(50% - 9px); position: absolute; z-index: 99; }
+  #specs .tooltipWrapper a { width: 18px; height: 18px; background: #fff; left: calc(50% - 9px); opacity: 1; border: 4px solid #70707033; border-radius: 100px; top: calc(50% - 9px); position: absolute; z-index: 99; transition: all 0.5s ease-out 0s; }
   #specs .circleMiddle .tooltipWrapper:first-child a:first-child { top: calc(25% - 9px); }
   #specs .circleMiddle .tooltipWrapper:first-child a:last-child { top: calc(75% - 9px); }
+  #specs .tooltipWrapper a:hover { background: #D5AE9F; border-color: #FFFFFF33; }
   .tooltip { background-color: transparent; opacity: 1!important; }
-  .tooltip > .tooltip-inner { background-color: #fff !important; letter-spacing: 0.28px; color: #43646D; opacity: 1 !important; font-size: 10px; }
+  .tooltip > .tooltip-inner { background-color: #fff !important; letter-spacing: 0.28px; color: #43646D; opacity: 1 !important; font-size: 14px; line-height: 28px; }
   .tooltip .arrow:before { border-top-color: white;  border-right-color: transparent;  border-bottom-color: white;  border-left-color: transparent; }
   #specs p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
 /************ END Section Specs ************/
@@ -154,24 +157,36 @@
 
 
 /************ START Animation ************/
-  .animation-element { transform: translateY(100px); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.5s; }
-  .animation-element.in-view { opacity: 1; transform: translateY(0px); visibility: visible; }
+  .animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 0.5s; }
+  .animation-element.in-view { opacity: 1; visibility: visible; }
 
-  #home.animation-element { transform: none !important; visibility: visible; opacity: 1; transition: none; }
-  #home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0s; }
+  #home.animation-element { visibility: visible; opacity: 1; transition: none; }
+  #home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
   #home.animation-element.in-view::after { opacity: 1; transform: translateX(0); visibility: visible; }
-  #home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0.3s; }
+  #home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.3s; }
   #home.animation-element.in-view::before { opacity: 1; transform: translateX(0); visibility: visible; }
   
   #home .homeTopLeftBack.animation-element, #home .homeTopRightBack.animation-element, #home .homeBottomLeftBack.animation-element, #home .homeBottoRightBack.animation-element { transform: none; visibility: visible; opacity: 1; transition: none; }
-  #home .homeTopLeftBack.animation-element::before, #home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0.7s; }
+  #home .homeTopLeftBack.animation-element::before, #home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
   #home .homeTopLeftBack.animation-element.in-view::before, #home .homeTopRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
-  #home .homeBottomLeftBack.animation-element::before, #home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 0; transition: all 0.5s ease-out 0.7s; }
+  #home .homeBottomLeftBack.animation-element::before, #home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
   #home .homeBottomLeftBack.animation-element.in-view::before, #home .homeBottomRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
-  body .mainMenu.animation-element { transform: none !important; visibility: hidden; opacity: 0; transition: all 0.5s ease-out 1.3s; }
+  body .mainMenu.animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 1.3s; }
   body .mainMenu.animation-element.in-view { opacity: 1; visibility: visible;  }
-  #home .logoWrapper.animation-element { transform: none !important; visibility: hidden; opacity: 0; transition: all 0.5s ease-out 1.5s; }
-  #home .logoWrapper.animation-element.in-view { opacity: 1; visibility: visible;  }
+  #home .logoWrapper.animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 1.5s; }
+  #home .logoWrapper.animation-element.in-view { opacity: 1; visibility: visible; }
+
+  #images .animation-element { transform: translateY(100px); } 
+  #images .animation-element.in-view { transform: translateY(0px); } 
+
+  #specs .imageWrapper.animation-element:first-child { transition: all 1s ease-out 0.5s; } 
+  #specs .imageWrapper.animation-element:nth-child(3) { transition: all 1s ease-out 0.7s; }
+  #specs .imageWrapper.animation-element:nth-child(2) { transition: all 1s ease-out 0.9s; }
+  #specs .imageWrapper.animation-element:last-child { transition: all 1s ease-out 1s; }
+  #specs .row.animation-element { transition: all 1s ease-out 1.8s; }
+
+  #about .animation-element { transform: translateY(100px); } 
+  #about .animation-element.in-view { transform: translateY(0px); } 
 /************ END Animation ************/
 
 /*Large devices (desktops, less than 1400px)*/
@@ -194,6 +209,7 @@
   #images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
   #specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
+  .tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
 
   #inclusions p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
 
