@@ -73,7 +73,7 @@
   #images .show-neighbors { overflow: hidden; }
 
   #images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 95px 0 166px }
-  #images .show-neighbors .carousel-item { transition: all 0.6s ease-in-out 0s; }
+  #images .show-neighbors .carousel-item { transition: all 0.8s ease-in-out 0s; }
   #images .show-neighbors .carousel-item-next:not(.carousel-item-left),
   #images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
   #images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
