@@ -201,7 +201,7 @@
   #specs .imageWrapper.animation-element.in-view:nth-child(3) { transform: translateY(0); }
   #specs .imageWrapper.animation-element.in-view:nth-child(2) { transform: translateY(0); }
   #specs .imageWrapper.animation-element.in-view:last-child { transform: translateY(0); }
-  #specs .row.animation-element { transition: all 1s ease-out 1s; }
+  #specs .row.animation-element { transition: all 0.8s ease-out 0.9s; }
 
   #about .animation-element { transform: translateY(100px); } 
   #about .animation-element.in-view { transform: translateY(0px); } 
