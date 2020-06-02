@@ -14,7 +14,6 @@
 		<!-- Import JS Files -->
 		<!-- <script src="./js/jquery-3.3.1.slim.min.js" type="text/javascript"></script> -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="./js/popper.min.js" type="text/javascript"></script>
 		<script src="./js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="./js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
@@ -24,14 +23,14 @@
 		<link rel="icon" href="./img/Short_Logo.png" sizes="16x16">
 	</head>
 
-	<body id="pageHome" data-spy="scroll" data-target=".mainMenu" data-offset="50">
+	<body id="pageHome">
 		
 		<!-- START Navigation -->
 		<nav class="navbar fixed-top navbar-expand-xl mainMenu animation-element" role="navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="false" aria-label="">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="container-fluid">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
 				<div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
 					<ul class="navbar-nav w-100 justify-content-between">
 						<li class="nav-item">
@@ -55,343 +54,345 @@
 		</nav>
 		<!-- END Navigation -->
 
-		<!-- START Section Home -->
-		<section id="home" class="h-100 w-100 animation-element">
-			<div class="homeTopLeftBack animation-element"></div>				
-			<div class="homeBottomLeftBack animation-element"></div>
-			<div class="container-fluid h-100 mh-100 ">
-				<div class="row h-100 d-flex align-items-center justify-content-md-center">
-					<h1 class="logoWrapper animation-element">
-						<img src="./img/logo.png">
-						<a href="#" class="btn btn-link">REGISTER NOW</a>
-					</h1>
-				</div>
-			</div>
-			<div class="homeTopRightBack animation-element"></div>				
-			<div class="homeBottomRightBack animation-element"></div>				
-		</section>
-		<!-- END Section Home -->
-
-		<!-- START Section Images -->
-		<section id="images" class="h-100 w-100">
-			<div class="container-fluid h-100 mh-100">
-				<div class="row h-100 animation-element">
-					<div id="carouselGallery" class="carousel slide show-neighbors h-100" data-wrap="false">
-
-						<div class="carousel-inner h-100">
-							<div class="carousel-item active h-100">
-								<div class="item__third h-100">
-									<div class="h-100 d-flex align-items-center justify-content-md-center">
-										<img src="./img/Gallery/sparks-gal-1.jpg" class="d-block mw-100 mh-100" alt="">
-									</div>
-									<div class="carousel-caption d-flex align-items-center">
-										<h5>
-											LIVING
-											<small>Artist Impression</small>
-										</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item h-100">
-								<div class="item__third h-100">
-									<div class="h-100 d-flex align-items-center justify-content-md-center">
-										<img src="./img/Gallery/sparks-gal-2.jpg" class="d-block mw-100 mh-100" alt="">
-									</div>
-									<div class="carousel-caption d-flex align-items-center">
-										<h5>
-											LIVING
-											<small>Artist Impression</small>
-										</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item h-100">
-								<div class="item__third h-100">
-									<div class="h-100 d-flex align-items-center justify-content-md-center">
-										<img src="./img/Gallery/sparks-gal-3.jpg" class="d-block mw-100 mh-100" alt="">
-									</div>
-									<div class="carousel-caption d-flex align-items-center">
-										<h5>
-											LIVING
-											<small>Artist Impression</small>
-										</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item h-100">
-								<div class="item__third h-100">
-									<div class="h-100 d-flex align-items-center justify-content-md-center">
-										<img src="./img/Gallery/sparks-gal-4.jpg" class="d-block mw-100 mh-100" alt="">
-									</div>
-									<div class="carousel-caption d-flex align-items-center">
-										<h5>
-											LIVING
-											<small>Artist Impression</small>
-										</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-									</div>
-								</div>
-							</div>
-							<div class="carousel-item h-100">
-								<div class="item__third h-100">
-									<div class="h-100 d-flex align-items-center justify-content-md-center">
-										<img src="./img/Gallery/sparks-gal-5.jpg" class="d-block mw-100 mh-100" alt="">
-									</div>
-									<div class="carousel-caption d-flex align-items-center">
-										<h5>
-											LIVING
-											<small>Artist Impression</small>
-										</h5>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev"> </a>
-						<a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next"> </a>
-
-					</div>
-
-					<script id="INLINE_PEN_JS_ID">
-						$('.carousel-item', '.show-neighbors').each(function () {
-							var next = $(this).next();
-							if (!next.length) {
-								next = $(this).siblings(':first');
-							}
-							next.children(':first-child').clone().appendTo($(this));
-						}).each(function () {
-							var prev = $(this).prev();
-							if (!prev.length) {
-								prev = $(this).siblings(':last');
-							}
-							prev.children(':nth-last-child(2)').clone().prependTo($(this));
-						});
-						//# sourceURL=pen.js
-					</script>
-				</div>
-			</div>
-		</section>
-		<!-- END Section Images -->
-
-		<!-- START Section FloorPlans -->
-		<section id="floorplans" class="h-100 w-100">
-			<div class="container-fluid h-100 mh-100">
-				<div class="row animation-element">
-					<div class="col-3">
-						<!-- <h2>Unit</h2> -->
-					</div>
-					<div class="col-9">
-						<div class="row">
-							<div class="col-9 h-100 d-flex align-items-center">
-								<img src="./img/Floor-Plans/UNIT-1.png" class="mx-auto d-block" alt="...">
-							</div>
-							<div class="col-3 h-100 d-flex align-items-end">
-								<!-- <img src="./img/Floor-Plans/sparks-gal-1.jpg" class="mx-auto d-block" alt="..."> -->
-							</div>
-						</div>
+		<main class="Loop js-loop" data-spy="scroll" data-target=".mainMenu" data-offset="50">
+			<!-- START Section Home -->
+			<section id="home" class="h-100 w-100 animation-element">
+				<div class="homeTopLeftBack animation-element"></div>				
+				<div class="homeBottomLeftBack animation-element"></div>
+				<div class="container-fluid h-100 mh-100 ">
+					<div class="row h-100 d-flex align-items-center justify-content-md-center">
+						<h1 class="logoWrapper animation-element">
+							<img src="./img/logo.png">
+							<a href="#" class="btn btn-link">REGISTER NOW</a>
+						</h1>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- END Section FloorPlans -->
+				<div class="homeTopRightBack animation-element"></div>				
+				<div class="homeBottomRightBack animation-element"></div>				
+			</section>
+			<!-- END Section Home -->
 
-		<!-- START Section Specs -->
-		<section id="specs" class="h-100 w-100">
-			<div class="container-fluid h-100 mh-100">
-				<div class="row h-100">
-					<div class="col h-100">
-						<div class="row h-100 d-flex align-items-center">
-							<div class="float-left mh-100 imageWrapper animation-element">
-								<div class="tooltipWrapper mh-100 float-left">							
-									<img src="./img/SPECS/carpet.png" class="float-left mh-100 mw-100" alt="...">
-									<span data-toggle="tooltip" title="Carpet"></span>
-								</div>
-								<div class="tooltipWrapper mh-100 imageCircle">
-									<img src="./img/SPECS/wall-paint.png" class="float-left w-100 mh-100" alt="...">
-									<span data-toggle="tooltip" title="Wall Paint"></span>
-								</div>
-							</div>
-							<div class="float-left mh-100 imageWrapper circleBottom animation-element">
-								<div class="tooltipWrapper mh-100 float-left">							
-									<img src="./img/SPECS/floorboards.png" class="float-left mh-100 mw-100" alt="...">
-									<span data-toggle="tooltip" title="Floorboards"></span>
-								</div>
-								<div class="tooltipWrapper mh-100 imageCircle">
-									<img src="./img/SPECS/kickboard.png" class="float-left w-100 mh-100" alt="...">
-									<span data-toggle="tooltip" title="Kickboard"></span>
-								</div>
-							</div>
-							<div class="float-left mh-100 imageWrapper circleMiddle animation-element">
-								<div class="tooltipWrapper mh-100 float-left">							
-									<span data-toggle="tooltip" title="Benchtop Wall Side"></span>
-									<img src="./img/SPECS/benchtop-wall-side-and-island-side.png" class="float-left mh-100 mw-100" alt="...">
-									<span data-toggle="tooltip" title="Island Side"></span>
-								</div>
-								<div class="tooltipWrapper mh-100 d-flex align-items-center imageCircle">
-									<img src="./img/SPECS/kitchen-splashback.png" class="float-left w-100 mh-100" alt="...">
-									<span data-toggle="tooltip" title="Kitchen Splashback"></span>
-								</div>
-							</div>
-							<div class="float-left mh-100 imageWrapper animation-element">
-								<div class="tooltipWrapper mh-100 float-left">							
-									<img src="./img/SPECS/bathroom-tiles.png" class="float-left mh-100 mw-100" alt="...">
-									<span data-toggle="tooltip" title="Bathroom Tiles"></span>
-								</div>
-								<div class="tooltipWrapper mh-100 imageCircle">
-									<img src="./img/SPECS/bathroom-wall-tiles.png" class="float-left w-100 mh-100" alt="...">
-									<span data-toggle="tooltip" title="Bathroom Wall Tiles"></span>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					<div class="col h-100 d-flex align-items-center">
-						<div class="row animation-element">
-							<h4>Lorem Ipsum is simply</h4>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-							<a href="" class="btn btn-secondary">DOWNLOAD BROCHURE</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END Section Specs -->
+			<!-- START Section Images -->
+			<section id="images" class="h-100 w-100">
+				<div class="container-fluid h-100 mh-100">
+					<div class="row h-100 animation-element">
+						<div id="carouselGallery" class="carousel slide show-neighbors h-100" data-wrap="false">
 
-		<!-- START Section Inclusions -->
-		<section id="inclusions" class="h-100 w-100">
-			<div class="container-fluid h-100 mh-100">
-				<div class="row h-100 animation-element">
-					<div class="col h-100">
-						<div class="row h-100">
-							<div id="carouselInclusions" class="carousel slide h-100" data-wrap="false">
-								<div class="carousel-inner h-100 mw-100">
-									<div class="carousel-item h-100 active">
-										<div class="h-100 d-flex align-items-center">
-											<img class="d-block mw-100 mh-100" src="./img/Inclusions/1.jpg" alt="First slide">
+							<div class="carousel-inner h-100">
+								<div class="carousel-item active h-100">
+									<div class="item__third h-100">
+										<div class="h-100 d-flex align-items-center justify-content-md-center">
+											<img src="./img/Gallery/sparks-gal-1.jpg" class="d-block mw-100 mh-100" alt="">
 										</div>
-									</div>
-									<div class="carousel-item h-100 mw-100">
-										<div class="h-100 d-flex align-items-center">
-											<img class="d-block mw-100 mh-100" src="./img/Inclusions/2.jpg" alt="Second slide">
-										</div>
-									</div>
-									<div class="carousel-item h-100 mw-100">
-										<div class="h-100 d-flex align-items-center">
-											<img class="d-block mw-100 mh-100" src="./img/Inclusions/3.jpg" alt="Third slide">
-										</div>
-									</div>
-									<div class="carousel-item h-100 mw-100">
-										<div class="h-100 d-flex align-items-center">
-											<img class="d-block mw-100 mh-100" src="./img/Inclusions/4.jpg" alt="Fourth slide">
-										</div>
-									</div>
-									<div class="carousel-item h-100 mw-100">
-										<div class="h-100 d-flex align-items-center">
-											<img class="d-block mw-100 mh-100" src="./img/Inclusions/5.jpg" alt="Fifth slide">
-										</div>
-									</div>
-									<div class="carousel-item h-100 mw-100">
-										<div class="h-100 d-flex align-items-center">
-											<img class="d-block mw-100 mh-100" src="./img/Inclusions/6.jpg" alt="Sixth slide">
+										<div class="carousel-caption d-flex align-items-center">
+											<h5>
+												LIVING
+												<small>Artist Impression</small>
+											</h5>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 										</div>
 									</div>
 								</div>
-								<a class="carousel-control-prev" href="#carouselInclusions" role="button" data-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								</a>
-								<a class="carousel-control-next" href="#carouselInclusions" role="button" data-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								</a>
+								<div class="carousel-item h-100">
+									<div class="item__third h-100">
+										<div class="h-100 d-flex align-items-center justify-content-md-center">
+											<img src="./img/Gallery/sparks-gal-2.jpg" class="d-block mw-100 mh-100" alt="">
+										</div>
+										<div class="carousel-caption d-flex align-items-center">
+											<h5>
+												LIVING
+												<small>Artist Impression</small>
+											</h5>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item h-100">
+									<div class="item__third h-100">
+										<div class="h-100 d-flex align-items-center justify-content-md-center">
+											<img src="./img/Gallery/sparks-gal-3.jpg" class="d-block mw-100 mh-100" alt="">
+										</div>
+										<div class="carousel-caption d-flex align-items-center">
+											<h5>
+												LIVING
+												<small>Artist Impression</small>
+											</h5>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item h-100">
+									<div class="item__third h-100">
+										<div class="h-100 d-flex align-items-center justify-content-md-center">
+											<img src="./img/Gallery/sparks-gal-4.jpg" class="d-block mw-100 mh-100" alt="">
+										</div>
+										<div class="carousel-caption d-flex align-items-center">
+											<h5>
+												LIVING
+												<small>Artist Impression</small>
+											</h5>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item h-100">
+									<div class="item__third h-100">
+										<div class="h-100 d-flex align-items-center justify-content-md-center">
+											<img src="./img/Gallery/sparks-gal-5.jpg" class="d-block mw-100 mh-100" alt="">
+										</div>
+										<div class="carousel-caption d-flex align-items-center">
+											<h5>
+												LIVING
+												<small>Artist Impression</small>
+											</h5>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+										</div>
+									</div>
+								</div>
 							</div>
+							<a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev"> </a>
+							<a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next"> </a>
+
 						</div>
+
+						<script id="INLINE_PEN_JS_ID">
+							$('.carousel-item', '.show-neighbors').each(function () {
+								var next = $(this).next();
+								if (!next.length) {
+									next = $(this).siblings(':first');
+								}
+								next.children(':first-child').clone().appendTo($(this));
+							}).each(function () {
+								var prev = $(this).prev();
+								if (!prev.length) {
+									prev = $(this).siblings(':last');
+								}
+								prev.children(':nth-last-child(2)').clone().prependTo($(this));
+							});
+							//# sourceURL=pen.js
+						</script>
 					</div>
 				</div>
-			</div>
-		</section>
-		<!-- END Section Inclusions -->
+			</section>
+			<!-- END Section Images -->
 
-		<!-- START Section About -->
-		<section id="about" class="h-100 w-100">
-			<div class="container-fluid h-100 mh-100">
-				<div class="row h-100 animation-element">
-					<div class="card h-100">
-						<div class="card-body">
-							<div class="mCustomScrollbar h-100">
-								<div class="row">
-									<div class="col">
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
-
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-										<h4>Contact</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
-
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
-
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-										<h4>Contact</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
-									</div>
-									<div class="col">
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-										<h4>Contact</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
-
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
-
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-
-										<h4>Contact</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
-
-										<h4>Lorem Ipsum is simply dummy text</h4>
-										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
-									</div>
-								</div>
-							</div>
+			<!-- START Section FloorPlans -->
+			<section id="floorplans" class="h-100 w-100">
+				<div class="container-fluid h-100 mh-100">
+					<div class="row animation-element">
+						<div class="col-3">
+							<!-- <h2>Unit</h2> -->
 						</div>
-						<div class="card-footer">
+						<div class="col-9">
 							<div class="row">
-								<div class="col-6">
+								<div class="col-9 h-100 d-flex align-items-center">
+									<img src="./img/Floor-Plans/UNIT-1.png" class="mx-auto d-block" alt="...">
+								</div>
+								<div class="col-3 h-100 d-flex align-items-end">
+									<!-- <img src="./img/Floor-Plans/sparks-gal-1.jpg" class="mx-auto d-block" alt="..."> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END Section FloorPlans -->
+
+			<!-- START Section Specs -->
+			<section id="specs" class="h-100 w-100">
+				<div class="container-fluid h-100 mh-100">
+					<div class="row h-100">
+						<div class="col h-100">
+							<div class="row h-100 d-flex align-items-center">
+								<div class="float-left mh-100 imageWrapper animation-element">
+									<div class="tooltipWrapper mh-100 float-left">							
+										<img src="./img/SPECS/carpet.png" class="float-left mh-100 mw-100" alt="...">
+										<span data-toggle="tooltip" title="Carpet"></span>
+									</div>
+									<div class="tooltipWrapper mh-100 imageCircle">
+										<img src="./img/SPECS/wall-paint.png" class="float-left w-100 mh-100" alt="...">
+										<span data-toggle="tooltip" title="Wall Paint"></span>
+									</div>
+								</div>
+								<div class="float-left mh-100 imageWrapper circleBottom animation-element">
+									<div class="tooltipWrapper mh-100 float-left">							
+										<img src="./img/SPECS/floorboards.png" class="float-left mh-100 mw-100" alt="...">
+										<span data-toggle="tooltip" title="Floorboards"></span>
+									</div>
+									<div class="tooltipWrapper mh-100 imageCircle">
+										<img src="./img/SPECS/kickboard.png" class="float-left w-100 mh-100" alt="...">
+										<span data-toggle="tooltip" title="Kickboard"></span>
+									</div>
+								</div>
+								<div class="float-left mh-100 imageWrapper circleMiddle animation-element">
+									<div class="tooltipWrapper mh-100 float-left">							
+										<span data-toggle="tooltip" title="Benchtop Wall Side"></span>
+										<img src="./img/SPECS/benchtop-wall-side-and-island-side.png" class="float-left mh-100 mw-100" alt="...">
+										<span data-toggle="tooltip" title="Island Side"></span>
+									</div>
+									<div class="tooltipWrapper mh-100 d-flex align-items-center imageCircle">
+										<img src="./img/SPECS/kitchen-splashback.png" class="float-left w-100 mh-100" alt="...">
+										<span data-toggle="tooltip" title="Kitchen Splashback"></span>
+									</div>
+								</div>
+								<div class="float-left mh-100 imageWrapper animation-element">
+									<div class="tooltipWrapper mh-100 float-left">							
+										<img src="./img/SPECS/bathroom-tiles.png" class="float-left mh-100 mw-100" alt="...">
+										<span data-toggle="tooltip" title="Bathroom Tiles"></span>
+									</div>
+									<div class="tooltipWrapper mh-100 imageCircle">
+										<img src="./img/SPECS/bathroom-wall-tiles.png" class="float-left w-100 mh-100" alt="...">
+										<span data-toggle="tooltip" title="Bathroom Wall Tiles"></span>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col h-100 d-flex align-items-center">
+							<div class="row animation-element">
+								<h4>Lorem Ipsum is simply</h4>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+								<a href="" class="btn btn-secondary">DOWNLOAD BROCHURE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END Section Specs -->
+
+			<!-- START Section Inclusions -->
+			<section id="inclusions" class="h-100 w-100">
+				<div class="container-fluid h-100 mh-100">
+					<div class="row h-100 animation-element">
+						<div class="col h-100">
+							<div class="row h-100">
+								<div id="carouselInclusions" class="carousel slide h-100" data-wrap="false">
+									<div class="carousel-inner h-100 mw-100">
+										<div class="carousel-item h-100 active">
+											<div class="h-100 d-flex align-items-center">
+												<img class="d-block mw-100 mh-100" src="./img/Inclusions/1.jpg" alt="First slide">
+											</div>
+										</div>
+										<div class="carousel-item h-100 mw-100">
+											<div class="h-100 d-flex align-items-center">
+												<img class="d-block mw-100 mh-100" src="./img/Inclusions/2.jpg" alt="Second slide">
+											</div>
+										</div>
+										<div class="carousel-item h-100 mw-100">
+											<div class="h-100 d-flex align-items-center">
+												<img class="d-block mw-100 mh-100" src="./img/Inclusions/3.jpg" alt="Third slide">
+											</div>
+										</div>
+										<div class="carousel-item h-100 mw-100">
+											<div class="h-100 d-flex align-items-center">
+												<img class="d-block mw-100 mh-100" src="./img/Inclusions/4.jpg" alt="Fourth slide">
+											</div>
+										</div>
+										<div class="carousel-item h-100 mw-100">
+											<div class="h-100 d-flex align-items-center">
+												<img class="d-block mw-100 mh-100" src="./img/Inclusions/5.jpg" alt="Fifth slide">
+											</div>
+										</div>
+										<div class="carousel-item h-100 mw-100">
+											<div class="h-100 d-flex align-items-center">
+												<img class="d-block mw-100 mh-100" src="./img/Inclusions/6.jpg" alt="Sixth slide">
+											</div>
+										</div>
+									</div>
+									<a class="carousel-control-prev" href="#carouselInclusions" role="button" data-slide="prev">
+										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="carousel-control-next" href="#carouselInclusions" role="button" data-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- END Section Inclusions -->
+
+			<!-- START Section About -->
+			<section id="about" class="h-100 w-100">
+				<div class="container-fluid h-100 mh-100">
+					<div class="row h-100 animation-element">
+						<div class="card h-100">
+							<div class="card-body">
+								<div class="mCustomScrollbar h-100">
 									<div class="row">
 										<div class="col">
-											<h5>Developer</h5>
-											<img src="./img/TPDynamics_Logo.jpg" class="img-fluid">
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
+
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+											<h4>Contact</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
+
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
+
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+											<h4>Contact</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
 										</div>
 										<div class="col">
-											<h5>Sales</h5>
-											<img src="./img/TPDynamics_Logo.jpg" class="img-fluid">
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+											<h4>Contact</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
+
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
+
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+											<h4>Contact</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever.</p>
+
+											<h4>Lorem Ipsum is simply dummy text</h4>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including.</p>
 										</div>
-										<div class="col">
-											<h5>Architect</h5>
-											<img src="./img/Stewart_Architecture_Logo.jpg" class="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="row">
+									<div class="col-6">
+										<div class="row">
+											<div class="col">
+												<h5>Developer</h5>
+												<img src="./img/TPDynamics_Logo.jpg" class="img-fluid">
+											</div>
+											<div class="col">
+												<h5>Sales</h5>
+												<img src="./img/TPDynamics_Logo.jpg" class="img-fluid">
+											</div>
+											<div class="col">
+												<h5>Architect</h5>
+												<img src="./img/Stewart_Architecture_Logo.jpg" class="img-fluid">
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						<p class="text-center w-100 copyrightText">
+							Copyright © 2020 SPARKS. All rights reserved. CREATED BY <img src="./img/LI-logo.png">
+						</p>
 					</div>
-					<p class="text-center w-100 copyrightText">
-						Copyright © 2020 SPARKS. All rights reserved. CREATED BY <img src="./img/LI-logo.png">
-					</p>
 				</div>
-			</div>
-		</section>
-		<!-- END Section About -->
+			</section>
+			<!-- END Section About -->
+		</main>
 	</body>
 
 	<script type="text/javascript">
@@ -417,6 +418,7 @@
 		}
 
 		$window.on('scroll resize', check_if_in_view);
+		$('.js-loop').on('scroll resize', check_if_in_view);
 		$window.trigger('scroll');
 	</script>
 </html>
