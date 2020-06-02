@@ -186,10 +186,10 @@
   #images .animation-element.in-view { transform: translateY(0px); } 
 
   #specs .imageWrapper.animation-element .tooltipWrapper { visibility: hidden; opacity: 0; } 
-  #specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 0s; } 
-  #specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 0.5s; }
-  #specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 1s; }
-  #specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 1.5s; }  
+  #specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 3s ease-out 0s; } 
+  #specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 3s ease-out 0.5s; }
+  #specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 3s ease-out 1s; }
+  #specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 3s ease-out 1.5s; }  
 
   #specs .imageWrapper.animation-element { visibility: visible; opacity: 1; } 
   #specs .imageWrapper.animation-element:first-child { transform: translateY(15px); transition: all 3s ease-out 2s; } 
