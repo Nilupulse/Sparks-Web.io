@@ -1,244 +1,244 @@
 /************ START New Fonts ************/
-  @font-face {
-    font-family: Limerick-Regular;
-    src: url(./Limerick-Regular/Limerick-Regular.woff);
-    font-weight: 100;
-  }
-  @font-face {
-    font-family: Limerick-Xlight;
-    src: url(./Limerick-Xlight/limerick-xlight.woff);
-    font-weight: 100;
-  }
-  @font-face {
-    font-family: Proxima-Nova;
-    src: url(./ProximaNovaRegular/ProximaNovaRegular.woff);
-    font-weight: 100;
-  }
+	@font-face {
+		font-family: Limerick-Regular;
+		src: url(./Limerick-Regular/Limerick-Regular.woff);
+		font-weight: 100;
+	}
+	@font-face {
+		font-family: Limerick-Xlight;
+		src: url(./Limerick-Xlight/limerick-xlight.woff);
+		font-weight: 100;
+	}
 /************ END New Fonts ************/
 
 /************ START Common Styles ************/
-  html { scroll-behavior: smooth; }
-  html, body { height: 100%; }
-  body { color: #2b435d; font-size: 18px; font-family: Limerick-Regular; }
-  body section { position: relative; padding: 5%; overflow: hidden; }
-  body .container-fluid { overflow-y: hidden; }
-  body .row{ z-index: 1; position: relative; }
-  body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
-  body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; font-family: Proxima-Nova; }
-  body p { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; }
+	html { scroll-behavior: smooth; }
+	html, body { height: 100%; }
+	body { color: #2b435d; font-size: 18px; font-family: Limerick-Regular; overflow: hidden; }
+	.Loop { position: relative; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+	section { position: relative; text-align: left; height: 100%; scroll-snap-align: start; }
 
-  body .btn { letter-spacing: 2.6px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
-  body .btn-secondary { background: #43646D; font-family: Proxima-Nova; letter-spacing: 2px; }
-  body .btn-secondary:hover, body .btn-secondary:active, body .btn-secondary:focus { background: #495c69; }
-  body .btn-outline-secondary { border-color: #43646D; color: #43646D; background: transparent !important; letter-spacing: 2px; }
-  body .btn-outline-secondary:hover, body .btn-outline-secondary:active, body .btn-outline-secondary:focus { border-color: #495C69; color: #495C69; }
+	body section { position: relative; padding: 5%; overflow: hidden; }
+	body .container-fluid { overflow-y: hidden; }
+	body .row{ z-index: 1; position: relative; }
+	body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
+	body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; font-family: Limerick-Xlight; }
+	body p { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; }
+
+	body .btn { letter-spacing: 2.6px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
+	body .btn-secondary { background: #43646D; font-family: Limerick-Xlight; letter-spacing: 2px; }
+	body .btn-secondary:hover, body .btn-secondary:active, body .btn-secondary:focus { background: #495c69; }
+	body .btn-outline-secondary { border-color: #43646D; color: #43646D; background: transparent !important; letter-spacing: 2px; }
+	body .btn-outline-secondary:hover, body .btn-outline-secondary:active, body .btn-outline-secondary:focus { border-color: #495C69; color: #495C69; }
 /************ END Common Styles ************/
 
 /************ START Navigation ************/
-  body .mainMenu { padding: 0; }
-  body .mainMenu .navbar-nav { max-width: 1168px; }
-  body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 39px 28px; }
-  body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
+	body .mainMenu { padding: 0; }
+	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 15px 15px; outline: none; }
+	body .mainMenu .navbar-toggler .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(67, 100, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+	body .mainMenu .navbar-nav { max-width: 1168px; }
+	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 39px 28px; transition: all 0.3s ease-out 0s; }
+	body .mainMenu .navbar-nav .nav-link:hover, body .mainMenu .navbar-nav .nav-link:active, body .mainMenu .navbar-nav .nav-link:focus, body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
 /************ END Navigation ************/
 
 /************ START Section Home ************/
-  #home::before { content: ""; background: #495c69; width: 100%; height: 100%; position: absolute; top: 0; left: -70%; border-radius: 0 1000px 1000px 0; z-index: 0; }
-  #home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -2; }
+	#home::before { content: ""; background: #495c69; width: 100%; height: 100%; position: absolute; top: 0; left: -70%; border-radius: 0 1000px 1000px 0; z-index: 0; }
+	#home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -2; }
 
-  #home .homeTopLeftBack { position: absolute; width: 30%; height: 50%; left: 0; top: 0; overflow: hidden; z-index: -1; }
-  #home .homeTopLeftBack::before { content: ""; background: #43646d; width: 100%; height: 200%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
+	#home .homeTopLeftBack { position: absolute; width: 30%; height: 50%; left: 0; top: 0; overflow: hidden; z-index: -1; }
+	#home .homeTopLeftBack::before { content: ""; background: #43646d; width: 100%; height: 200%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
 
-  #home .homeBottomLeftBack { position: absolute; width: 30%; height: 50%; left: 0; bottom: 0; overflow: hidden; z-index: -1; }
-  #home .homeBottomLeftBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0; }
+	#home .homeBottomLeftBack { position: absolute; width: 30%; height: 50%; left: 0; bottom: 0; overflow: hidden; z-index: -1; }
+	#home .homeBottomLeftBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0; }
 
-  #home .homeTopRightBack { position: absolute; width: 70%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -3; }
-  #home .homeTopRightBack::before { content: ""; background: #eee3db; width: 100%; height: 300%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
-  
-  #home .homeBottomRightBack { position: absolute; width: 70%; height: 50%; right: 0; bottom: 0; overflow: hidden; z-index: -3; }
-  #home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 300%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
+	#home .homeTopRightBack { position: absolute; width: 70%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -3; }
+	#home .homeTopRightBack::before { content: ""; background: #eee3db; width: 100%; height: 300%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
+	
+	#home .homeBottomRightBack { position: absolute; width: 70%; height: 50%; right: 0; bottom: 0; overflow: hidden; z-index: -3; }
+	#home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 300%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
 
-  #home .logoWrapper { margin: 0; display: block; position: relative; }
-  #home .logoWrapper * { display: block; width: 100%; }
-  #home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; font-family: Limerick-Xlight; }
-  #home .logoWrapper .btn-link:hover, #home .logoWrapper .btn-link:active, #home .logoWrapper .btn-link:focus { color: #495C69; }
+	#home .logoWrapper { margin: 0; display: block; position: relative; }
+	#home .logoWrapper * { display: block; width: 100%; }
+	#home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; font-family: Limerick-Xlight; }
+	#home .logoWrapper .btn-link:hover, #home .logoWrapper .btn-link:active, #home .logoWrapper .btn-link:focus { color: #495C69; }
 /************ END Section Home ************/
 
 /************ START Section Images ************/
-  #images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
-  #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
+	#images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
+	#images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 
-  #images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
-  #images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
+	#images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 0; }
+	#images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 
-  #images .show-neighbors { overflow: hidden; }
+	#images .show-neighbors { overflow: hidden; }
 
-  #images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 95px 0 166px }
-  #images .show-neighbors .carousel-item { transition: all 0.8s ease-in-out 0s; }
-  #images .show-neighbors .carousel-item-next:not(.carousel-item-left),
-  #images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
-  #images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
-  #images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 180px), 0, 0); transform: translate3d(calc(-33.33% + 180px), 0, 0); }
+	#images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 95px 0 166px }
+	#images .show-neighbors .carousel-item { transition: all 0.8s ease-in-out 0s; }
+	#images .show-neighbors .carousel-item-next:not(.carousel-item-left),
+	#images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
+	#images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
+	#images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 180px), 0, 0); transform: translate3d(calc(-33.33% + 180px), 0, 0); }
 
-  #images .show-neighbors .item__third { float: left; position: relative; width: calc(33.33% - 180px); }
-  #images .carousel-item:first-child .item__third:first-child, 
-  #images .carousel-item:last-child .item__third:last-child { opacity: 0 } 
+	#images .show-neighbors .item__third { float: left; position: relative; width: calc(33.33% - 180px); }
+	#images .carousel-item:first-child .item__third:first-child, 
+	#images .carousel-item:last-child .item__third:last-child { opacity: 0 } 
 
-  #images .show-neighbors .item__third > div { padding: 0 25px; }
-  #images .show-neighbors .item__third:first-child > div:first-child { background: rgba(255, 255, 255, 0.3); }
-  #images .show-neighbors .item__third:last-child > div:first-child { background: rgba(255, 255, 255, 0.3); }
-  #images .show-neighbors .carousel-item-left .item__third > div, 
-  #images .show-neighbors .carousel-item-right .item__third > div,
-  #images .show-neighbors .carousel-item-next .item__third > div,
-  #images .show-neighbors .carousel-item-prev .item__third > div { background: transparent !important; }
+	#images .show-neighbors .item__third > div { padding: 0 25px; }
+	#images .show-neighbors .item__third:first-child > div:first-child { background: rgba(255, 255, 255, 0.3); }
+	#images .show-neighbors .item__third:last-child > div:first-child { background: rgba(255, 255, 255, 0.3); }
+	#images .show-neighbors .carousel-item-left .item__third > div, 
+	#images .show-neighbors .carousel-item-right .item__third > div,
+	#images .show-neighbors .carousel-item-next .item__third > div,
+	#images .show-neighbors .carousel-item-prev .item__third > div { background: transparent !important; }
 
-  #images .carousel-item .item__third img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0.5s; } 
-  #images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0); filter: grayscale(0); } 
-  #images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
-  #images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
+	#images .carousel-item .item__third img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0.5s; } 
+	#images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0); filter: grayscale(0); } 
+	#images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
+	#images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
 
-  #images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; }
-  #images .show-neighbors .item__third:nth-child(2) .carousel-caption { opacity: 1; }
-  #images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; font-family: Limerick-Xlight; }
-  #images .carousel-caption h5 small { display: block; font-size: 20px; line-height: 28px; letter-spacing: 0.4px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
-  #images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 25px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
-    
-  #images .show-neighbors .carousel-control-prev,
-  #images .show-neighbors .carousel-control-next { width: 90px; z-index: 11; opacity: 0; }
+	#images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; }
+	#images .show-neighbors .item__third:nth-child(2) .carousel-caption { opacity: 1; }
+	#images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; font-family: Limerick-Xlight; }
+	#images .carousel-caption h5 small { display: block; font-size: 20px; line-height: 28px; letter-spacing: 0.4px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
+	#images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 25px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
+		
+	#images .show-neighbors .carousel-control-prev,
+	#images .show-neighbors .carousel-control-next { width: 90px; z-index: 11; opacity: 0; }
 /************ END Section Images ************/
 
 /************ START Section FloorPlans ************/
-  #floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
-  #floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
+	#floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
+	#floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
 /************ END Section FloorPlans ************/
 
 /************ START Section Specs ************/
-  #specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 210px 158px; }
-  #specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
-  
-  body #specs .container-fluid { overflow-y: visible; }
-  #specs .imageWrapper { position: relative; border-radius: 500px; overflow: hidden; width: 164px; height: 660px; }
-  #specs .tooltipWrapper { position: relative; }
-  #specs .tooltipWrapper.imageCircle { position: absolute; left: 0; width: 100%; top: 0; }
-  #specs .circleBottom .tooltipWrapper.imageCircle { top: auto; bottom: 0; }
-  #specs .circleMiddle .tooltipWrapper.imageCircle { top: 35%; bottom: auto; height: 30%; }
-  #specs .tooltipWrapper img { position: relative; z-index: 1; }
-  #specs .tooltipWrapper span { width: 18px; height: 18px; background: #fff; left: calc(50% - 9px); opacity: 1; border: 4px solid #70707033; border-radius: 100px; top: calc(50% - 9px); position: absolute; z-index: 99; transition: all 0.5s ease-out 0s; }
-  #specs .circleMiddle .tooltipWrapper:first-child a:first-child { top: calc(25% - 9px); }
-  #specs .circleMiddle .tooltipWrapper:first-child a:last-child { top: calc(75% - 9px); }
-  #specs .tooltipWrapper span:hover { background: #D5AE9F; border-color: #FFFFFF33; }
-  .tooltip { background-color: transparent; opacity: 1!important; }
-  .tooltip > .tooltip-inner { background-color: #fff !important; letter-spacing: 0.28px; color: #43646D; opacity: 1 !important; font-size: 14px; line-height: 28px; }
-  .tooltip .arrow:before { border-top-color: white;  border-right-color: transparent;  border-bottom-color: white;  border-left-color: transparent; }
-  #specs p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
+	#specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 210px 158px; }
+	#specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
+	
+	body #specs .container-fluid { overflow-y: visible; }
+	#specs .imageWrapper { position: relative; border-radius: 500px; overflow: hidden; width: 164px; height: 660px; }
+	#specs .tooltipWrapper { position: relative; }
+	#specs .tooltipWrapper.imageCircle { position: absolute; left: 0; width: 100%; top: 0; }
+	#specs .circleBottom .tooltipWrapper.imageCircle { top: auto; bottom: 0; }
+	#specs .circleMiddle .tooltipWrapper.imageCircle { top: 35%; bottom: auto; height: 30%; }
+	#specs .tooltipWrapper img { position: relative; z-index: 1; }
+	#specs .tooltipWrapper span { width: 18px; height: 18px; background: #fff; left: calc(50% - 9px); opacity: 1; border: 4px solid #70707033; border-radius: 100px; top: calc(50% - 9px); position: absolute; z-index: 99; transition: all 0.5s ease-out 0s; box-shadow: 0 0 0 3px rgba(225,225,225,.32); }
+	#specs .circleMiddle .tooltipWrapper:first-child a:first-child { top: calc(25% - 9px); }
+	#specs .circleMiddle .tooltipWrapper:first-child a:last-child { top: calc(75% - 9px); }
+	#specs .tooltipWrapper span:hover { background: #D5AE9F; border-color: transparent; box-shadow: 0 0 0 5px rgba(225,225,225,.32); }
+	.tooltip { background-color: transparent; transition: opacity 0.5s ease-out 0s; opacity: 1; }
+	.tooltip > .tooltip-inner { background-color: #fff !important; letter-spacing: 0.28px; color: #43646D; opacity: 1 !important; font-size: 14px; line-height: 28px; }
+	.tooltip .arrow:before { border-top-color: white;  border-right-color: transparent;  border-bottom-color: white;  border-left-color: transparent; }
+	#specs p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
 /************ END Section Specs ************/
 
 /************ START Section Inclusions ************/
-  #inclusions { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); padding: 100px 90px; }
-  #inclusions::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
-  #inclusions .carousel { position: relative; overflow: hidden; width: auto; }
-  #inclusions .carousel-item:first-child img { border-radius: 20px 0 0 20px; overflow: hidden; } 
-  #inclusions .carousel-item:last-child img { border-radius: 0 20px 20px 0; overflow: hidden; }
-  #inclusions p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
+	#inclusions { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); padding: 100px 90px; }
+	#inclusions::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
+	#inclusions .carousel { position: relative; overflow: hidden; width: auto; }
+	#inclusions .carousel-item:first-child img { border-radius: 20px 0 0 20px; overflow: hidden; } 
+	#inclusions .carousel-item:last-child img { border-radius: 0 20px 20px 0; overflow: hidden; }
+	#inclusions p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
 /************ END Section Inclusions ************/  
 
 /************ START Section About ************/
-  #about { background: linear-gradient(to bottom, #c7b4a6 0%,#c7b4a6 50%,#eee3db 50%,#eee3db 100%); padding: 95px 118px; }
-  #about::before { content: ""; background: #eee3db; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
-  #about::after { content: ""; background: #d5ae9f; width: 75%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
-  #about .container-fluid { position: relative; z-index: 1; overflow: visible; }
-  #about .card { border-radius: 0; border: none;}
-  #about .card .card-body { padding: 10px; max-height: calc(100% - 150px); }
-  #about .card .mCustomScrollbar { overflow: auto; }
-  #about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { margin-right: 30px; padding: 46px 50px; }
-  #about .card .mCustomScrollbar .mCSB_draggerRail { width: 9px; background: #e5e5e5; margin-right: 0; }
-  #about .card .mCustomScrollbar .mCSB_dragger_bar { width: 9px; background: #c7b4a6; margin-right: 0; }
-  #about .card .col:first-child { padding-right: 20px; }
-  #about .card .col:last-child { padding-left: 20px; }
-  #about .card h4 { margin-bottom: 15px; }
-  #about .card p { margin-bottom: 40px; }
-  #about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
-  #about .card .card-footer .img-fluid { max-height: 59px; }
-  #about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: 11px; line-height: 24px; font-family: Limerick-Xlight; }
-  #about .copyrightText img { width: 30px; margin-top: -4px; }
+	#about { background: linear-gradient(to bottom, #c7b4a6 0%,#c7b4a6 50%,#eee3db 50%,#eee3db 100%); padding: 95px 118px; }
+	#about::before { content: ""; background: #eee3db; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
+	#about::after { content: ""; background: #d5ae9f; width: 75%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
+	#about .container-fluid { position: relative; z-index: 1; overflow: visible; }
+	#about .card { border-radius: 0; border: none;}
+	#about .card .card-body { padding: 10px; max-height: calc(100% - 150px); }
+	#about .card .mCustomScrollbar { overflow: auto; }
+	#about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { margin-right: 30px; padding: 46px 50px; }
+	#about .card .mCustomScrollbar .mCSB_draggerRail { width: 9px; background: #e5e5e5; margin-right: 0; }
+	#about .card .mCustomScrollbar .mCSB_dragger_bar { width: 9px; background: #c7b4a6; margin-right: 0; }
+	#about .card .col:first-child { padding-right: 20px; }
+	#about .card .col:last-child { padding-left: 20px; }
+	#about .card h4 { margin-bottom: 15px; }
+	#about .card p { margin-bottom: 40px; }
+	#about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
+	#about .card .card-footer .img-fluid { max-height: 59px; }
+	#about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: 11px; line-height: 24px; font-family: Limerick-Xlight; }
+	#about .copyrightText img { width: 30px; margin-top: -4px; }
 /************ END Section About ************/
 
 /************ START Animation ************/
-  .animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
-  .animation-element.in-view { opacity: 1; visibility: visible; }
+	.animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
+	.animation-element.in-view { opacity: 1; visibility: visible; }
 
-  #home.animation-element { visibility: visible; opacity: 1; transition: none; }
-  #home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
-  #home.animation-element.in-view::after { opacity: 1; transform: translateX(0); visibility: visible; }
-  #home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.3s; }
-  #home.animation-element.in-view::before { opacity: 1; transform: translateX(0); visibility: visible; }
-  
-  #home .homeTopLeftBack.animation-element, #home .homeTopRightBack.animation-element, #home .homeBottomLeftBack.animation-element, #home .homeBottoRightBack.animation-element { transform: none; visibility: visible; opacity: 1; transition: none; }
-  #home .homeTopLeftBack.animation-element::before, #home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
-  #home .homeTopLeftBack.animation-element.in-view::before, #home .homeTopRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
-  #home .homeBottomLeftBack.animation-element::before, #home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
-  #home .homeBottomLeftBack.animation-element.in-view::before, #home .homeBottomRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
-  body .mainMenu.animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 1.3s; }
-  body .mainMenu.animation-element.in-view { opacity: 1; visibility: visible;  }
-  #home .logoWrapper.animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 1.5s; }
-  #home .logoWrapper.animation-element.in-view { opacity: 1; visibility: visible; }
+	#home.animation-element { visibility: visible; opacity: 1; transition: none; }
+	#home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
+	#home.animation-element.in-view::after { opacity: 1; transform: translateX(0); visibility: visible; }
+	#home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.3s; }
+	#home.animation-element.in-view::before { opacity: 1; transform: translateX(0); visibility: visible; }
+	
+	#home .homeTopLeftBack.animation-element, #home .homeTopRightBack.animation-element, #home .homeBottomLeftBack.animation-element, #home .homeBottoRightBack.animation-element { transform: none; visibility: visible; opacity: 1; transition: none; }
+	#home .homeTopLeftBack.animation-element::before, #home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
+	#home .homeTopLeftBack.animation-element.in-view::before, #home .homeTopRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+	#home .homeBottomLeftBack.animation-element::before, #home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
+	#home .homeBottomLeftBack.animation-element.in-view::before, #home .homeBottomRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+	body .mainMenu.animation-element { visibility: hidden; opacity: 0; transition: all 1.5s ease-out 1.3s; }
+	body .mainMenu.animation-element.in-view { opacity: 1; visibility: visible;  }
+	#home .logoWrapper.animation-element { visibility: hidden; opacity: 0; transition: all 1.5s ease-out 1.5s; }
+	#home .logoWrapper.animation-element.in-view { opacity: 1; visibility: visible; }
 
-  #images .animation-element { transform: translateY(100px); } 
-  #images .animation-element.in-view { transform: translateY(0px); } 
+	#images .animation-element { transform: translateY(100px); } 
+	#images .animation-element.in-view { transform: translateY(0px); } 
 
-  #specs .imageWrapper.animation-element .tooltipWrapper { visibility: hidden; opacity: 0; } 
-  #specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 0s; } 
-  #specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 0.5s; }
-  #specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 1s; }
-  #specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 1.5s; }  
+	#specs .imageWrapper.animation-element .tooltipWrapper { visibility: hidden; opacity: 0; } 
+	#specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 0s; } 
+	#specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 0.5s; }
+	#specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 1s; }
+	#specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 1.5s; }  
 
-  #specs .imageWrapper.animation-element { visibility: visible; opacity: 1; } 
-  #specs .imageWrapper.animation-element:first-child { transform: translateY(15px); transition: all 3s ease-out 2s; } 
-  #specs .imageWrapper.animation-element:nth-child(3) { transform: translateY(15px); transition: all 3s ease-out 2s; }
-  #specs .imageWrapper.animation-element:nth-child(2) { transform: translateY(-15px); transition: all 3s ease-out 2s; }
-  #specs .imageWrapper.animation-element:last-child { transform: translateY(-15px); transition: all 3s ease-out 2s; }
+	#specs .imageWrapper.animation-element { visibility: visible; opacity: 1; } 
+	#specs .imageWrapper.animation-element:first-child { transform: translateY(15px); transition: all 3s ease-out 1.1s; } 
+	#specs .imageWrapper.animation-element:nth-child(3) { transform: translateY(15px); transition: all 3s ease-out 1.1s; }
+	#specs .imageWrapper.animation-element:nth-child(2) { transform: translateY(-15px); transition: all 3s ease-out 1.1s; }
+	#specs .imageWrapper.animation-element:last-child { transform: translateY(-15px); transition: all 3s ease-out 1.1s; }
 
-  #specs .imageWrapper.animation-element.in-view:first-child { transform: translateY(0); }
-  #specs .imageWrapper.animation-element.in-view:nth-child(3) { transform: translateY(0); }
-  #specs .imageWrapper.animation-element.in-view:nth-child(2) { transform: translateY(0); }
-  #specs .imageWrapper.animation-element.in-view:last-child { transform: translateY(0); }
-  #specs .row.animation-element { transition: all 0.8s ease-out 0.9s; }
+	#specs .imageWrapper.animation-element.in-view:first-child { transform: translateY(0); }
+	#specs .imageWrapper.animation-element.in-view:nth-child(3) { transform: translateY(0); }
+	#specs .imageWrapper.animation-element.in-view:nth-child(2) { transform: translateY(0); }
+	#specs .imageWrapper.animation-element.in-view:last-child { transform: translateY(0); }
+	#specs .row.animation-element { transition: all 1s ease-out 1.5s; }
 
-  #about .animation-element { transform: translateY(100px); } 
-  #about .animation-element.in-view { transform: translateY(0px); } 
+	#about .animation-element { transform: translateY(100px); } 
+	#about .animation-element.in-view { transform: translateY(0px); } 
 /************ END Animation ************/
 
 /*Large devices (desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
-  body h4 { font-size: 14px; line-height: 24px; }
-  body h5 { font-size: 9px; line-height: 20px; }
-  body p { font-size: 12px; line-height: 20px; }
+	body h4 { font-size: 14px; line-height: 24px; }
+	body h5 { font-size: 9px; line-height: 20px; }
+	body p { font-size: 12px; line-height: 20px; }
 
-  body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
+	body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
 
-  body .mainMenu .navbar-nav { max-width: 716px; }
-  body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
+	body .mainMenu .navbar-nav { max-width: 800px; }
+	body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
 
-  #home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
+	#home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
 
-  #images .show-neighbors .carousel-inner { padding: 70px 0 90px }
-  #images .carousel-caption { bottom: -90px; height: 90px; }
-  #images .carousel-caption h5 { font-size: 20px; line-height: 26px; }
-  #images .carousel-caption p { letter-spacing: 1px; font-size: 11px; line-height: 16px; }
-  #images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
+	#images .show-neighbors .carousel-inner { padding: 70px 0 90px }
+	#images .carousel-caption { bottom: -90px; height: 90px; }
+	#images .carousel-caption h5 { font-size: 20px; line-height: 26px; }
+	#images .carousel-caption p { letter-spacing: 1px; font-size: 11px; line-height: 16px; }
+	#images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
-  #specs { padding: 100px 90px; }
-  #specs .imageWrapper { width: 100px; height: 400px; }
-  #specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
-  .tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
+	#specs { padding: 100px 90px; }
+	#specs .imageWrapper { width: 100px; height: 400px; }
+	#specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
+	.tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
 
-  #inclusions p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
+	#inclusions p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
 
-  #about { padding: 60px 90px; }
-  #about .card .card-body { max-height: calc(100% - 105px); }
-  #about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { padding: 27px; }
-  #about .card .card-footer { height: 105px; }
-  #about .card .card-footer .img-fluid { max-height: 35px; }
-  #about .copyrightText { font-size: 9px; line-height: 22px; }
+	#about { padding: 60px 90px; }
+	#about .card .card-body { max-height: calc(100% - 105px); }
+	#about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { padding: 27px; }
+	#about .card .card-footer { height: 105px; }
+	#about .card .card-footer .img-fluid { max-height: 35px; }
+	#about .copyrightText { font-size: 9px; line-height: 22px; }
 
 }
 
