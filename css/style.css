@@ -34,7 +34,7 @@
 
 /************ START Navigation ************/
 	body .mainMenu { padding: 0; }
-	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 39px 28px; outline: none; }
+	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 37px 37px; outline: none; }
 	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 2em; height: 2em; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(67, 100, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 	body .mainMenu .navbar-nav { max-width: 1168px; }
 	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 39px 28px; transition: all 0.3s ease-out 0s; }
@@ -142,7 +142,7 @@
 /************ END Section Inclusions ************/  
 
 /************ START Section About ************/
-	#about { background: linear-gradient(to bottom, #c7b4a6 0%,#c7b4a6 50%,#eee3db 50%,#eee3db 100%); padding: 95px 118px; }
+	#about { background: linear-gradient(to bottom, #c7b4a6 0%,#c7b4a6 50%,#eee3db 50%,#eee3db 100%); padding: 116px 158px; }
 	#about::before { content: ""; background: #eee3db; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 	#about::after { content: ""; background: #d5ae9f; width: 75%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
 	#about .container-fluid { position: relative; z-index: 1; overflow: visible; }
