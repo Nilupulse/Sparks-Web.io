@@ -19,7 +19,7 @@
 	section { position: relative; text-align: left; height: 100%; scroll-snap-align: start; }
 
 	body section { position: relative; padding: 5%; overflow: hidden; }
-	body .container-fluid { overflow-y: hidden; }
+	body .container-fluid { overflow: hidden; }
 	body .row{ z-index: 1; position: relative; }
 	body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
 	body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; font-family: Limerick-Xlight; }
