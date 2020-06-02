@@ -34,7 +34,7 @@
 
 /************ START Navigation ************/
 	body .mainMenu { padding: 0; }
-	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 15px 15px; outline: none; }
+	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; width: 2em; height: 2em; padding: 39px 28px; outline: none; }
 	body .mainMenu .navbar-toggler .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(67, 100, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 	body .mainMenu .navbar-nav { max-width: 1168px; }
 	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 39px 28px; transition: all 0.3s ease-out 0s; }
@@ -215,6 +215,7 @@
 
 	body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
 
+	body .mainMenu .navbar-toggler { padding: 17px 17px; width: 1.5em; height: 1.5em; }
 	body .mainMenu .navbar-nav { max-width: 800px; }
 	body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
 
