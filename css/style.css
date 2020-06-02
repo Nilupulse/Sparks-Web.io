@@ -216,7 +216,7 @@
 	body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
 
 	body .mainMenu .navbar-toggler { padding: 17px 17px; }
-	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 2em; height: 2em; }
+	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 1.5em; height: 1.5em; }
 	body .mainMenu .navbar-nav { max-width: 800px; }
 	body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
 
