@@ -6,7 +6,12 @@
   }
   @font-face {
     font-family: Limerick-Xlight;
-    src: url(./Ilimerick-Xlight/Ilimerick-Xlight.woff);
+    src: url(./Limerick-Xlight/limerick-xlight.ttf);
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: Proxima-Nova;
+    src: url(./ProximaNovaRegular/ProximaNovaRegular.woff);
     font-weight: 100;
   }
 /************ END New Fonts ************/
@@ -19,25 +24,25 @@
   body .container-fluid { overflow-y: hidden; }
   body .row{ z-index: 1; position: relative; }
   body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
-  body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; }
+  body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; font-family: Proxima-Nova; }
   body p { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; }
 
-  body .btn { letter-spacing: 2px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
-  body .btn-secondary { background: #43646D; }
+  body .btn { letter-spacing: 2.6px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
+  body .btn-secondary { background: #43646D; font-family: Proxima-Nova; letter-spacing: 2px; }
   body .btn-secondary:hover, body .btn-secondary:active, body .btn-secondary:focus { background: #495c69; }
-  body .btn-outline-secondary { border-color: #43646D; color: #43646D; background: transparent !important; }
+  body .btn-outline-secondary { border-color: #43646D; color: #43646D; background: transparent !important; letter-spacing: 2px; }
   body .btn-outline-secondary:hover, body .btn-outline-secondary:active, body .btn-outline-secondary:focus { border-color: #495C69; color: #495C69; }
 /************ END Common Styles ************/
 
 /************ START Navigation ************/
   body .mainMenu { padding: 0; }
   body .mainMenu .navbar-nav { max-width: 1168px; }
-  body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 28px; }
+  body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 39px 28px; }
   body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
 /************ END Navigation ************/
 
 /************ START Section Home ************/
-  #home::before { content: ""; background: #495c69; width: 30%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: 0; }
+  #home::before { content: ""; background: #495c69; width: 100%; height: 100%; position: absolute; top: 0; left: -70%; border-radius: 0 1000px 1000px 0; z-index: 0; }
   #home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -2; }
 
   #home .homeTopLeftBack { position: absolute; width: 30%; height: 50%; left: 0; top: 0; overflow: hidden; z-index: -1; }
@@ -46,15 +51,15 @@
   #home .homeBottomLeftBack { position: absolute; width: 30%; height: 50%; left: 0; bottom: 0; overflow: hidden; z-index: -1; }
   #home .homeBottomLeftBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0; }
 
-  #home .homeTopRightBack { position: absolute; width: 30%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -3; }
-  #home .homeTopRightBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
+  #home .homeTopRightBack { position: absolute; width: 70%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -3; }
+  #home .homeTopRightBack::before { content: ""; background: #eee3db; width: 100%; height: 300%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
   
-  #home .homeBottomRightBack { position: absolute; width: 30%; height: 50%; right: 0; bottom: 0; overflow: hidden; z-index: -3; }
-  #home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
+  #home .homeBottomRightBack { position: absolute; width: 70%; height: 50%; right: 0; bottom: 0; overflow: hidden; z-index: -3; }
+  #home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 300%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
 
   #home .logoWrapper { margin: 0; display: block; position: relative; }
   #home .logoWrapper * { display: block; width: 100%; }
-  #home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; }
+  #home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; font-family: Limerick-Xlight; }
   #home .logoWrapper .btn-link:hover, #home .logoWrapper .btn-link:active, #home .logoWrapper .btn-link:focus { color: #495C69; }
 /************ END Section Home ************/
 
@@ -68,6 +73,7 @@
   #images .show-neighbors { overflow: hidden; }
 
   #images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 95px 0 166px }
+  #images .show-neighbors .carousel-item { transition: all 0.6s ease-in-out 0s; }
   #images .show-neighbors .carousel-item-next:not(.carousel-item-left),
   #images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
   #images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
@@ -85,14 +91,14 @@
   #images .show-neighbors .carousel-item-next .item__third > div,
   #images .show-neighbors .carousel-item-prev .item__third > div { background: transparent !important; }
 
-  #images .carousel-item .item__third img { -webkit-filter: grayscale(100%) opacity(60%); filter: grayscale(100%) opacity(60%); transition: filter 1s ease-out 2s; } 
-  #images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0) opacity(100%); filter: grayscale(0) opacity(100%); } 
+  #images .carousel-item .item__third img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0.5s; } 
+  #images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0); filter: grayscale(0); } 
   #images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
   #images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
 
   #images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; }
   #images .show-neighbors .item__third:nth-child(2) .carousel-caption { opacity: 1; }
-  #images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; }
+  #images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; font-family: Limerick-Xlight; }
   #images .carousel-caption h5 small { display: block; font-size: 20px; line-height: 28px; letter-spacing: 0.4px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
   #images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 25px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
     
@@ -106,10 +112,11 @@
 /************ END Section FloorPlans ************/
 
 /************ START Section Specs ************/
-  #specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 100px 90px; }
+  #specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 210px 158px; }
   #specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
   
-  #specs .imageWrapper { position: relative; border-radius: 500px; overflow: hidden; }
+  body #specs .container-fluid { overflow-y: visible; }
+  #specs .imageWrapper { position: relative; border-radius: 500px; overflow: hidden; width: 164px; height: 660px; }
   #specs .tooltipWrapper { position: relative; }
   #specs .tooltipWrapper.imageCircle { position: absolute; left: 0; width: 100%; top: 0; }
   #specs .circleBottom .tooltipWrapper.imageCircle { top: auto; bottom: 0; }
@@ -151,13 +158,12 @@
   #about .card p { margin-bottom: 40px; }
   #about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
   #about .card .card-footer .img-fluid { max-height: 59px; }
-  #about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: 11px; line-height: 24px; }
+  #about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: 11px; line-height: 24px; font-family: Limerick-Xlight; }
   #about .copyrightText img { width: 30px; margin-top: -4px; }
 /************ END Section About ************/
 
-
 /************ START Animation ************/
-  .animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 0.5s; }
+  .animation-element { visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
   .animation-element.in-view { opacity: 1; visibility: visible; }
 
   #home.animation-element { visibility: visible; opacity: 1; transition: none; }
@@ -179,10 +185,22 @@
   #images .animation-element { transform: translateY(100px); } 
   #images .animation-element.in-view { transform: translateY(0px); } 
 
-  #specs .imageWrapper.animation-element:first-child { transition: all 1s ease-out 0.5s; } 
-  #specs .imageWrapper.animation-element:nth-child(3) { transition: all 1s ease-out 0.7s; }
-  #specs .imageWrapper.animation-element:nth-child(2) { transition: all 1s ease-out 0.9s; }
-  #specs .imageWrapper.animation-element:last-child { transition: all 1s ease-out 1s; }
+  #specs .imageWrapper.animation-element .tooltipWrapper { visibility: hidden; opacity: 0; } 
+  #specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 0.8s ease-out 0.5s; } 
+  #specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 0.8s ease-out 0.6s; }
+  #specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 0.8s ease-out 0.7s; }
+  #specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 0.8s ease-out 0.8s; }  
+
+  #specs .imageWrapper.animation-element { visibility: visible; opacity: 1; } 
+  #specs .imageWrapper.animation-element:first-child { transform: translateY(15px); transition: all 1s ease-out 1s; } 
+  #specs .imageWrapper.animation-element:nth-child(3) { transform: translateY(15px); transition: all 1s ease-out 1s; }
+  #specs .imageWrapper.animation-element:nth-child(2) { transform: translateY(-15px); transition: all 1s ease-out 1s; }
+  #specs .imageWrapper.animation-element:last-child { transform: translateY(-15px); transition: all 1s ease-out 1s; }
+
+  #specs .imageWrapper.animation-element.in-view:first-child { transform: translateY(0); }
+  #specs .imageWrapper.animation-element.in-view:nth-child(3) { transform: translateY(0); }
+  #specs .imageWrapper.animation-element.in-view:nth-child(2) { transform: translateY(0); }
+  #specs .imageWrapper.animation-element.in-view:last-child { transform: translateY(0); }
   #specs .row.animation-element { transition: all 1s ease-out 1.8s; }
 
   #about .animation-element { transform: translateY(100px); } 
@@ -195,7 +213,7 @@
   body h5 { font-size: 9px; line-height: 20px; }
   body p { font-size: 12px; line-height: 20px; }
 
-  body .btn { letter-spacing: 1.5px; font-size: 12px; line-height: 20px; padding: 12px 25px; }
+  body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
 
   body .mainMenu .navbar-nav { max-width: 716px; }
   body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
@@ -208,6 +226,8 @@
   #images .carousel-caption p { letter-spacing: 1px; font-size: 11px; line-height: 16px; }
   #images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
+  #specs { padding: 100px 90px; }
+  #specs .imageWrapper { width: 100px; height: 400px; }
   #specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
   .tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
 
@@ -218,7 +238,7 @@
   #about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { padding: 27px; }
   #about .card .card-footer { height: 105px; }
   #about .card .card-footer .img-fluid { max-height: 35px; }
-  #about .copyrightText { letter-spacing: 1.5px; font-size: 9px; line-height: 22px; }
+  #about .copyrightText { font-size: 9px; line-height: 22px; }
 
 }
 
