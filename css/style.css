@@ -43,18 +43,18 @@
 
 /************ START Section Home ************/
 	#home::before { content: ""; background: #495c69; width: 100%; height: 100%; position: absolute; top: 0; left: -70%; border-radius: 0 1000px 1000px 0; z-index: 0; }
-	#home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -2; }
+	#home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -3; }
 
-	#home .homeTopLeftBack { position: absolute; width: 30%; height: 50%; left: 0; top: 0; overflow: hidden; z-index: -1; }
-	#home .homeTopLeftBack::before { content: ""; background: #43646d; width: 100%; height: 200%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
+	#home .homeTopLeftBack { position: absolute; width: 30%; height: 50%; left: 0; top: 0; /*overflow: hidden;*/ z-index: -2; }
+	#home .homeTopLeftBack::before { content: ""; background: #43646d; width: 100%; height: 300%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
 
 	#home .homeBottomLeftBack { position: absolute; width: 30%; height: 50%; left: 0; bottom: 0; overflow: hidden; z-index: -1; }
-	#home .homeBottomLeftBack::before { content: ""; background: #eee3db; width: 100%; height: 200%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0; }
+	#home .homeBottomLeftBack::before { content: ""; background: #eee3db; width: 100%; height: 300%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0; }
 
-	#home .homeTopRightBack { position: absolute; width: 70%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -3; }
+	#home .homeTopRightBack { position: absolute; width: 40%; height: 50%; right: 0; top: 0; overflow: hidden; z-index: -4; }
 	#home .homeTopRightBack::before { content: ""; background: #eee3db; width: 100%; height: 300%; position: absolute; top: 0; left: 0; border-radius: 0 0 1000px 1000px; }
 	
-	#home .homeBottomRightBack { position: absolute; width: 70%; height: 50%; right: 0; bottom: 0; overflow: hidden; z-index: -3; }
+	#home .homeBottomRightBack { position: absolute; width: 40%; height: 50%; right: 0; bottom: 0; /*overflow: hidden;*/ z-index: -5; }
 	#home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 300%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
 
 	#home .logoWrapper { margin: 0; display: block; position: relative; }
@@ -72,14 +72,14 @@
 
 	#images .show-neighbors { overflow: hidden; }
 
-	#images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 270px); padding: 95px 0 166px }
+	#images .show-neighbors .carousel-inner { width: 300%; left: calc(-100% + 474px); padding: 116px 0 166px }
 	#images .show-neighbors .carousel-item { transition: all 0.8s ease-in-out 0s; }
 	#images .show-neighbors .carousel-item-next:not(.carousel-item-left),
-	#images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
+	#images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 316px), 0, 0); transform: translate3d(calc(33.33% - 316px), 0, 0); }
 	#images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
-	#images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 180px), 0, 0); transform: translate3d(calc(-33.33% + 180px), 0, 0); }
+	#images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 316px), 0, 0); transform: translate3d(calc(-33.33% + 316px), 0, 0); }
 
-	#images .show-neighbors .item__third { float: left; position: relative; width: calc(33.33% - 180px); }
+	#images .show-neighbors .item__third { float: left; position: relative; width: calc(33.33% - 316px); }
 	#images .carousel-item:first-child .item__third:first-child, 
 	#images .carousel-item:last-child .item__third:last-child { opacity: 0 } 
 
@@ -91,7 +91,7 @@
 	#images .show-neighbors .carousel-item-next .item__third > div,
 	#images .show-neighbors .carousel-item-prev .item__third > div { background: transparent !important; }
 
-	#images .carousel-item .item__third img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0.5s; } 
+	#images .carousel-item .item__third img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0s; } 
 	#images .in-view .carousel-item.active .item__third:nth-child(2) img { -webkit-filter: grayscale(0); filter: grayscale(0); } 
 	#images .carousel-item:first-child .item__third:nth-child(2) img { border-radius: 20px 0 0 20px; overflow: hidden; } 
 	#images .carousel-item:last-child .item__third:nth-child(2) img { border-radius: 0 20px 20px 0; overflow: hidden; }
@@ -103,7 +103,7 @@
 	#images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 25px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
 		
 	#images .show-neighbors .carousel-control-prev,
-	#images .show-neighbors .carousel-control-next { width: 90px; z-index: 11; opacity: 0; }
+	#images .show-neighbors .carousel-control-next { width: 158px; z-index: 11; opacity: 0; }
 /************ END Section Images ************/
 
 /************ START Section FloorPlans ************/
@@ -171,41 +171,45 @@
 	.animation-element.in-view { opacity: 1; visibility: visible; }
 
 	#home.animation-element { visibility: visible; opacity: 1; transition: none; }
-	#home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0s; }
+	#home.animation-element::after { transform: translateX(-100%); visibility: hidden; opacity: 1; transition: all 1s ease-out 0s; }
 	#home.animation-element.in-view::after { opacity: 1; transform: translateX(0); visibility: visible; }
-	#home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.3s; }
+	#home.animation-element::before { transform: translateX(-100%); visibility: hidden; opacity: 1; transition: all 1s ease-out 0.5s; }
 	#home.animation-element.in-view::before { opacity: 1; transform: translateX(0); visibility: visible; }
 	
 	#home .homeTopLeftBack.animation-element, #home .homeTopRightBack.animation-element, #home .homeBottomLeftBack.animation-element, #home .homeBottoRightBack.animation-element { transform: none; visibility: visible; opacity: 1; transition: none; }
-	#home .homeTopLeftBack.animation-element::before, #home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
-	#home .homeTopLeftBack.animation-element.in-view::before, #home .homeTopRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
-	#home .homeBottomLeftBack.animation-element::before, #home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 0; transition: all 1s ease-out 0.7s; }
-	#home .homeBottomLeftBack.animation-element.in-view::before, #home .homeBottomRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
-	body .mainMenu.animation-element { visibility: hidden; opacity: 0; transition: all 1.5s ease-out 1.3s; }
+	#home .homeTopLeftBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 1; transition: all 1s ease-out 0s; } 
+	#home .homeTopRightBack.animation-element::before { transform: translateY(-100%); visibility: hidden; opacity: 1; transition: all 1s ease-out 1.5s; }
+	#home .homeTopLeftBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+	#home .homeTopRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+	#home .homeBottomLeftBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 1; transition: all 1s ease-out 1.5s; } 
+	#home .homeBottomRightBack.animation-element::before { transform: translateY(100%); visibility: hidden; opacity: 1; transition: all 1s ease-out 0s; }
+	#home .homeBottomLeftBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; } 
+	#home .homeBottomRightBack.animation-element.in-view::before { opacity: 1; transform: translateY(0); visibility: visible; }
+	body .mainMenu.animation-element { visibility: hidden; opacity: 0; transition: all 1.5s ease-out 1.8s; }
 	body .mainMenu.animation-element.in-view { opacity: 1; visibility: visible;  }
-	#home .logoWrapper.animation-element { visibility: hidden; opacity: 0; transition: all 1.5s ease-out 1.5s; }
+	#home .logoWrapper.animation-element { visibility: hidden; opacity: 0; transition: all 1.5s ease-out 2s; }
 	#home .logoWrapper.animation-element.in-view { opacity: 1; visibility: visible; }
 
 	#images .animation-element { transform: translateY(100px); } 
 	#images .animation-element.in-view { transform: translateY(0px); } 
 
 	#specs .imageWrapper.animation-element .tooltipWrapper { visibility: hidden; opacity: 0; } 
-	#specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 0s; } 
-	#specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 0.5s; }
-	#specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 1s; }
-	#specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 8s ease-out 1.5s; }  
+	#specs .imageWrapper.animation-element.in-view:first-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 0s; } 
+	#specs .imageWrapper.animation-element.in-view:nth-child(3) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 0.2s; }
+	#specs .imageWrapper.animation-element.in-view:nth-child(2) .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 0.4s; }
+	#specs .imageWrapper.animation-element.in-view:last-child .tooltipWrapper { opacity: 1; visibility: visible; transition: all 2s ease-out 0.6s; }  
 
 	#specs .imageWrapper.animation-element { visibility: visible; opacity: 1; } 
-	#specs .imageWrapper.animation-element:first-child { transform: translateY(15px); transition: all 3s ease-out 1.1s; } 
-	#specs .imageWrapper.animation-element:nth-child(3) { transform: translateY(15px); transition: all 3s ease-out 1.1s; }
-	#specs .imageWrapper.animation-element:nth-child(2) { transform: translateY(-15px); transition: all 3s ease-out 1.1s; }
-	#specs .imageWrapper.animation-element:last-child { transform: translateY(-15px); transition: all 3s ease-out 1.1s; }
+	#specs .imageWrapper.animation-element:first-child { transform: translateY(15px); transition: all 1s ease-out 0.6s; } 
+	#specs .imageWrapper.animation-element:nth-child(3) { transform: translateY(15px); transition: all 1s ease-out 0.6s; }
+	#specs .imageWrapper.animation-element:nth-child(2) { transform: translateY(-15px); transition: all 1s ease-out 0.6s; }
+	#specs .imageWrapper.animation-element:last-child { transform: translateY(-15px); transition: all 1s ease-out 0.6s; }
 
 	#specs .imageWrapper.animation-element.in-view:first-child { transform: translateY(0); }
 	#specs .imageWrapper.animation-element.in-view:nth-child(3) { transform: translateY(0); }
 	#specs .imageWrapper.animation-element.in-view:nth-child(2) { transform: translateY(0); }
 	#specs .imageWrapper.animation-element.in-view:last-child { transform: translateY(0); }
-	#specs .row.animation-element { transition: all 1s ease-out 1.5s; }
+	#specs .row.animation-element { transition: all 1s ease-out 1s; }
 
 	#floorplans .animation-element { transform: translateY(100px); } 
 	#floorplans .animation-element.in-view { transform: translateY(0px); }
@@ -257,7 +261,14 @@
 }
 
 /*Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) { ... }
+@media (max-width: 991.98px) {
+	#images .show-neighbors .carousel-inner { left: calc(-100% + 270px); padding: 95px 0 166px }
+	#images .show-neighbors .carousel-item-next:not(.carousel-item-left),
+	#images .show-neighbors .carousel-item-right.active { -webkit-transform: translate3d(calc(33.33% - 180px), 0, 0); transform: translate3d(calc(33.33% - 180px), 0, 0); }
+	#images .show-neighbors .carousel-item-prev:not(.carousel-item-right), 
+	#images .show-neighbors .carousel-item-left.active { -webkit-transform: translate3d(calc(-33.33% + 180px), 0, 0); transform: translate3d(calc(-33.33% + 180px), 0, 0); }
+	#images .show-neighbors .item__third { width: calc(33.33% - 180px); }
+}
 
 /*Small devices (landscape phones, less than 768px)*/
 @media (max-width: 767.98px) { ... }
