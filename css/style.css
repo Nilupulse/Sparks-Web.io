@@ -19,7 +19,7 @@
 	section { position: relative; text-align: left; height: 100%; scroll-snap-align: start; }
 
 	body section { position: relative; padding: 5%; overflow: hidden; }
-	body .container-fluid { overflow: hidden; }
+	/*body .container-fluid { overflow: hidden; }*/
 	body .row { z-index: 1; position: relative; }
 	body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
 	body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; font-family: Limerick-Xlight; }
@@ -156,6 +156,7 @@
 	.tooltip { background-color: transparent; transition: opacity 0.5s ease-out 0s; opacity: 1; }
 	.tooltip > .tooltip-inner { background-color: #fff !important; letter-spacing: 0.28px; color: #43646D; opacity: 1 !important; font-size: 14px; line-height: 28px; }
 	.tooltip .arrow:before { border-top-color: white;  border-right-color: transparent;  border-bottom-color: white;  border-left-color: transparent; }
+	#specs h4 { padding-right: calc(100% - 639px); }
 	#specs p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
 /************ END Section Specs ************/
 
@@ -171,8 +172,8 @@
 	#inclusions .carousel-caption { left: 0; right: 0; text-align: left; } 
 	#inclusions .carousel-control-prev-icon { background: url('../img/Inclusions/arrow-left.png') no-repeat center center / 100% auto; }
 	#inclusions .carousel-control-next-icon { background: url('../img/Inclusions/arrow-right.png') no-repeat center center / 100% auto; }
+	#inclusions h4 { padding-right: calc(100% - 639px); }
 	#inclusions p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
-
 /************ END Section Inclusions ************/  
 
 /************ START Section About ************/
@@ -277,11 +278,13 @@
 
 	#specs { padding: 100px 90px; }
 	#specs .imageWrapper { width: 100px; height: 400px; }
+	#specs h4 { padding-right: calc(100% - 445px); }
 	#specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
 	.tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
 
 	#inclusions { padding: 100px 90px; }
 	#inclusions .carousel { max-width: 400px; } 
+	#inclusions h4 { padding-right: calc(100% - 445px); }
 	#inclusions p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
 
 	#about { padding: 60px 90px; }
