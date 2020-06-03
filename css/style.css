@@ -36,8 +36,8 @@
 	body .mainMenu { padding: 0; }
 	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 37px 37px; outline: none; }
 	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 2em; height: 2em; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(67, 100, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
-	body .mainMenu .navbar-nav { max-width: 1168px; }
-	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 26px; padding: 39px 28px; transition: all 0.3s ease-out 0s; }
+	body .mainMenu .navbar-nav { max-width: 900px; }
+	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 20px; padding: 39px 28px; transition: all 0.3s ease-out 0s; }
 	body .mainMenu .navbar-nav .nav-link:hover, body .mainMenu .navbar-nav .nav-link:active, body .mainMenu .navbar-nav .nav-link:focus, body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
 /************ END Navigation ************/
 
