@@ -44,7 +44,7 @@
 /************ START Sidebar ************/
 	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 40px 0; background: #EEE3DB; transform: translateX(100%); transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
 	#sideBarToggle.toggled { transform: translateX(0); } 
-	#sideBarToggle .navbar-toggler { position: absolute; right: 0; top: -40px; width: 60px; height: 60px; } 
+	#sideBarToggle .navbar-toggler { position: absolute; right: 0; top: -40px; width: 60px; height: 60px; padding: 17px 17px; } 
 	#sideBarToggle .navbar-toggler .hamb-top,
 	#sideBarToggle .navbar-toggler .hamb-bottom { background-color: #43646D; width: 1px; height: 30px; position: absolute; top: 15px; left: 30px; }
 	#sideBarToggle .navbar-toggler .hamb-top {  -webkit-transform: rotate(45deg); -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08); }
@@ -52,19 +52,33 @@
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { font-family: Limerick-Xlight; padding: 25px 50px; font-size: 16px; cursor: pointer; }
 /************ END Sidebar ************/
 
-/************ START Form Contact ************/
-	#contact { background: linear-gradient(to bottom, #495c69 0%,#495c69 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 116px 158px; position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
-	#contact.toggled { opacity: 1; visibility: visible; }
+/************ START Form Contact / Register ************/
+	.formSection { font-family: Limerick-Xlight; color: #43646D; text-transform: uppercase; }
+	#contact { background: linear-gradient(to bottom, #495c69 0%,#495c69 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 250px calc(50% - 673px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
+	#register { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 250px calc(50% - 397px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
+	#contact.toggled, #register.toggled { opacity: 1; visibility: visible; }
+	
 	#contact::before { content: ""; background: #495c69; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 	#contact::after { content: ""; background: #D5AE9F; width: 100%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
-/************ END Form Contact ************/
 
-/************ START Form Contact ************/
-	#register { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 116px 158px; position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
-	#register.toggled { opacity: 1; visibility: visible; }
 	#register::before { content: ""; background: #495c69; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 	#register::after { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
-/************ END Form Contact ************/
+
+	.formSection .navbar-toggler { position: absolute; right: 0; top: 0; padding: 51px 63px; z-index: 9; outline: none; } 
+	.formSection .navbar-toggler span { font-family: Limerick-Regular; font-size: 18px; line-height: 31px; letter-spacing: 0.72px; color: #43646D; text-transform: uppercase; }
+
+	.formSection h2 { letter-spacing: 2.72px; font-size: 34px; margin-bottom: 60px; }
+	.formSection .form-group { border-bottom: 30px; }
+	.formSection .colWrapper .form-group:first-child { padding-right: 25px; }
+	.formSection .colWrapper .form-group:last-child { padding-left: 25px; }
+	.formSection .form-control { letter-spacing: 1.6px; font-size: 16px; text-transform: uppercase; padding: 15px 0; background: transparent; border-radius: 0; border: none; border-bottom: 1px solid #495C69; line-height: 16px; height: auto; box-shadow: none !important; outline: none; }
+	.formSection small { letter-spacing: 1.4px; font-size: 14px; padding: 28px 0; margin: 0; }
+	.formSection small a { color: inherit; text-decoration: underline; }
+	.formSection .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; padding: 28px 0; text-decoration: none !important; }
+	.formSection h4 { font-family: Limerick-Regular; letter-spacing: 0.8px; font-size: 20px; line-height: 40px; margin-bottom: 10px; }
+	.formSection h5 { font-family: Limerick-Regular; letter-spacing: 0.72px; font-size: 18px; line-height: 31px; margin-bottom: 10px; }
+	.formSection p { letter-spacing: 0.72px; font-size: 18px; line-height: 31px; margin-bottom: 55px; }
+/************ END Form Contact / Register ************/
 	 
 /************ START Section Home ************/
 	#home::before { content: ""; background: #495c69; width: 100%; height: 100%; position: absolute; top: 0; left: -70%; border-radius: 0 1000px 1000px 0; z-index: 0; }
@@ -136,6 +150,9 @@
 /************ START Section FloorPlans ************/
 	#floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
 	#floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
+	#floorplans .nav-pills .nav-link { border-radius: 0; border: 1px solid #43646D; color: #43646D; text-align: center; font-family: Limerick-Regular; font-size: 11px; line-height: 29px; letter-spacing: 1.1px; text-transform: uppercase; }
+	#floorplans .nav-pills .nav-link.active, 
+	#floorplans .nav-pills .show > .nav-link { color: #fff; background-color: #43646D; }
 /************ END Section FloorPlans ************/
 
 /************ START Section Specs ************/
@@ -267,6 +284,18 @@
 
 	#sideBarToggle { width: 260px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 20px 40px; font-size: 14px; }
+
+	#contact { padding: 100px 170px; }
+	#register { padding: 100px 270px; }
+	.formSection .navbar-toggler { padding: 35px 50px; z-index: 9; outline: none; } 
+	.formSection .navbar-toggler span, .formSection .form-control { font-size: 14px; }
+	.formSection h2 { font-size: 32px; margin-bottom: 40px; }
+	.formSection .form-control { padding: 12px 0; }
+	.formSection small { font-size: 12px; }
+	.formSection .btn-link { font-size: 24px; }
+	.formSection h4 { font-size: 16px; line-height: 30px; margin-bottom: 5px; }
+	.formSection h5 { font-size: 14px; line-height: 21px; margin-bottom: 5px; }
+	.formSection p { font-size: 14px; line-height: 21px; margin-bottom: 35px; }
 
 	#home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
 
