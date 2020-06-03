@@ -24,8 +24,8 @@ $(function () {
 
 		$("#carouselInclusions").on('slide.bs.carousel', function(evt) {
 			var step = $(evt.relatedTarget).index();
-			$('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
-				$('#caption-'+step).fadeIn('6000');
+			$('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('3000', function() {
+				$('#caption-'+step).fadeIn('3000');
 			});
 		});
 		$('#carouselInclusions').carousel({ interval: false });
