@@ -89,30 +89,127 @@
 		<!-- END Sidebar -->
 
 		<!-- START Section Contact -->
-		<section id="contact" class="h-100 w-100">
+		<section id="contact" class="h-100 w-100 formSection">
+			<button class="navbar-toggler" type="button" data-toggle="offContact">
+				<span>Close</span>
+			</button>
 			<div class="container-fluid h-100 mh-100">
-				<div class="row h-100">
-					<button class="navbar-toggler" type="button" data-toggle="offContact">					
-						<span class="hamb-top"></span>
-						<span class="hamb-bottom"></span>
-					</button>
+				<div class="row h-100 justify-content-between">
+					<div class="col-7 h-100">
+						<div class="row h-100 d-flex align-items-center">
+							<form class="w-100">
+								<h2>Contact</h2>
+								<div class="row colWrapper">
+									<div class="form-group col">
+										<input type="text" class="form-control" name="fName" placeholder="First Name">
+									</div>
+									<div class="form-group col">
+										<input type="text" class="form-control" name="lName" placeholder="Last Name">
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<input type="email" class="form-control" name="email" placeholder="Email">
+									</div>
+								</div>
+								<div class="row colWrapper">
+									<div class="form-group col">
+										<input type="text" class="form-control" name="phone" placeholder="Phone">
+									</div>
+									<div class="form-group col">
+										<input type="text" class="form-control" name="pCode" placeholder="Post Code">
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<select class="form-control" id="exampleFormControlSelect1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col">
+										<small class="form-text text-muted float-left">By clicking submit, you agree to the <a href="#">terms & conditions</a></small>
+										<button type="submit" class="btn btn-link float-right" data-toggle="offContact">Submit</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-4 h-100 d-flex align-items-center">
+						<div class="row">
+							<h4 class="w-100">DISPLAY SUITE ADDRESS</h4>
+							<p class="w-100">27 Thynne Street Bruce “Dunlop Court“</p>
+
+							<h5 class="w-100">Viewing By Appointment Only</h5>
+							<h4 class="w-100">Kenneth Kong</h4>
+							<p class="w-100">0411 586 906</p>
+
+							<h4 class="w-100">Will Ding</h4>
+							<p class="w-100">0415 925 885</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<!-- END Section Contact -->
 
-		<!-- START Section Contact -->
-		<section id="register" class="h-100 w-100">
+		<!-- START Section Register -->
+		<section id="register" class="h-100 w-100 formSection">
+			<button class="navbar-toggler" type="button" data-toggle="offRegister">
+				<span>Close</span>
+			</button>
 			<div class="container-fluid h-100 mh-100">
-				<div class="row h-100">
-					<button class="navbar-toggler" type="button" data-toggle="offRegister">					
-						<span class="hamb-top"></span>
-						<span class="hamb-bottom"></span>
-					</button>
+				<div class="row h-100 d-flex align-items-center">
+					<form class="w-100">
+						<h2>Register</h2>
+						<div class="row colWrapper">
+							<div class="form-group col">
+								<input type="text" class="form-control" name="fName" placeholder="First Name">
+							</div>
+							<div class="form-group col">
+								<input type="text" class="form-control" name="lName" placeholder="Last Name">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col">
+								<input type="email" class="form-control" name="email" placeholder="Email">
+							</div>
+						</div>
+						<div class="row colWrapper">
+							<div class="form-group col">
+								<input type="text" class="form-control" name="phone" placeholder="Phone">
+							</div>
+							<div class="form-group col">
+								<input type="text" class="form-control" name="pCode" placeholder="Post Code">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col">
+								<select class="form-control" id="exampleFormControlSelect1">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col">
+								<small class="form-text text-muted float-left">By clicking submit, you agree to the <a href="#">terms & conditions</a></small>
+								<button type="submit" class="btn btn-link float-right" data-toggle="offContact">Submit</button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</section>
-		<!-- END Section Contact -->
+		<!-- END Section Register -->
 
 		<main class="Loop js-loop" data-spy="scroll" data-target=".mainMenu" data-offset="0">
 			<!-- START Section Home -->
@@ -123,7 +220,7 @@
 					<div class="row h-100 d-flex align-items-center justify-content-md-center">
 						<h1 class="logoWrapper animation-element">
 							<img src="./img/logo.png">
-							<a href="#" class="btn btn-link">REGISTER NOW</a>
+							<a href="#" class="btn btn-link" data-toggle="offRegister">REGISTER NOW</a>
 						</h1>
 					</div>
 				</div>
@@ -221,18 +318,90 @@
 			<!-- START Section FloorPlans -->
 			<section id="floorplans" class="h-100 w-100">
 				<div class="container-fluid h-100 mh-100">
-					<div class="row animation-element">
-						<div class="col-3">
-							<!-- <h2>Unit</h2> -->
-						</div>
-						<div class="col-9">
-							<div class="row">
-								<div class="col-9 h-100 d-flex align-items-center">
-									<img src="./img/Floor-Plans/UNIT-1.png" class="mx-auto d-block" alt="...">
+					<div class="row h-100 animation-element">
+						<div class="col-9 h-100">
+							<div class="row tab-content h-100" id="v-pills-tabContent">
+								<div class="tab-pane fade h-100" id="site-plan" role="tabpanel" aria-labelledby="site-plan-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Site Plan</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/Site-Plan.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
 								</div>
-								<div class="col-3 h-100 d-flex align-items-end">
-									<!-- <img src="./img/Floor-Plans/sparks-gal-1.jpg" class="mx-auto d-block" alt="..."> -->
+								<div class="tab-pane fade h-100" id="unit-6" role="tabpanel" aria-labelledby="unit-6-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Unit 6</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/UNIT-6.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
 								</div>
+								<div class="tab-pane fade h-100" id="unit-5" role="tabpanel" aria-labelledby="unit-5-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Unit 5</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/UNIT-5.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade h-100" id="unit-4" role="tabpanel" aria-labelledby="unit-4-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Unit 4</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/UNIT-4.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade h-100" id="unit-3" role="tabpanel" aria-labelledby="unit-3-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Unit 3</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/UNIT-3.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade h-100" id="unit-2" role="tabpanel" aria-labelledby="unit-2-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Unit 2</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/UNIT-2.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade h-100 show active" id="unit-1" role="tabpanel" aria-labelledby="unit-1-tab">
+									<div class="row h-100">
+										<div class="col-4 h-100 d-flex align-items-center">
+											<h2>Unit 1</h2>
+										</div>
+										<div class="col-8 h-100 d-flex align-items-center">										
+											<img src="./img/Floor-Plans/UNIT-1.png" class="mw-100 mh-100" alt="...">
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>	
+						<div class="col-3 h-100 d-flex align-items-end">
+							<div class="row nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link" id="site-plan-tab" data-toggle="pill" href="#site-plan" role="tab" aria-controls="site-plan" aria-selected="true">Site Plan</a>
+								<a class="nav-link" id="unit-6-tab" data-toggle="pill" href="#unit-6" role="tab" aria-controls="unit-6" aria-selected="false">Unit 6</a>
+								<a class="nav-link" id="unit-5-tab" data-toggle="pill" href="#unit-5" role="tab" aria-controls="unit-5" aria-selected="false">Unit 5</a>
+								<a class="nav-link" id="unit-4-tab" data-toggle="pill" href="#unit-4" role="tab" aria-controls="unit-4" aria-selected="false">Unit 4</a>
+								<a class="nav-link" id="unit-3-tab" data-toggle="pill" href="#unit-3" role="tab" aria-controls="unit-3" aria-selected="false">Unit 3</a>
+								<a class="nav-link" id="unit-2-tab" data-toggle="pill" href="#unit-2" role="tab" aria-controls="unit-2" aria-selected="false">Unit 2</a>
+								<a class="nav-link active" id="unit-1-tab" data-toggle="pill" href="#unit-1" role="tab" aria-controls="unit-1" aria-selected="false">Unit 1</a>
 							</div>
 						</div>
 					</div>
