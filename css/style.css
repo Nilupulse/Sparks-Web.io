@@ -42,7 +42,7 @@
 /************ END Navigation ************/
 
 /************ START Sidebar ************/
-	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 40px 0; background: #EEE3DB; transform: translateX(100%); transition: all 0.5s ease-out 0s;  }
+	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 40px 0; background: #EEE3DB; transform: translateX(100%); transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
 	#sideBarToggle.toggled { transform: translateX(0); } 
 	#sideBarToggle .navbar-toggler { position: absolute; right: 0; top: -40px; width: 60px; height: 60px; } 
 	#sideBarToggle .navbar-toggler .hamb-top,
