@@ -10,6 +10,12 @@ $(function () {
 		$('[data-toggle="offcanvas"]').click(function () {
 			$('#sideBarToggle').toggleClass('toggled');
 		}); 
+		$('[data-toggle="offContact"]').click(function () {
+			$('#contact').toggleClass('toggled');
+		});  
+		$('[data-toggle="offRegister"]').click(function () {
+			$('#register').toggleClass('toggled');
+		}); 
 
 		$('.carousel-item', '.show-neighbors').each(function () {
 			var next = $(this).next();
