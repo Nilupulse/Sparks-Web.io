@@ -37,7 +37,7 @@
 	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 37px 37px; outline: none; }
 	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 2em; height: 2em; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(67, 100, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 	body .mainMenu .navbar-nav { max-width: 900px; }
-	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 20px; padding: 39px 28px; transition: all 0.3s ease-out 0s; outline: none; }
+	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 20px; line-height: 28px; padding: 39px 28px; transition: all 0.3s ease-out 0s; outline: none; }
 	body .mainMenu .navbar-nav .nav-link:hover, body .mainMenu .navbar-nav .nav-link:active, body .mainMenu .navbar-nav .nav-link:focus, body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
 /************ END Navigation ************/
 
@@ -66,7 +66,6 @@
 	#register::after { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
 /************ END Form Contact ************/
 	 
-
 /************ START Section Home ************/
 	#home::before { content: ""; background: #495c69; width: 100%; height: 100%; position: absolute; top: 0; left: -70%; border-radius: 0 1000px 1000px 0; z-index: 0; }
 	#home::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; z-index: -3; }
@@ -84,8 +83,10 @@
 	#home .homeBottomRightBack::before { content: ""; background: #43646d; width: 100%; height: 300%; position: absolute; bottom: 0; left: 0; border-radius: 1000px 1000px 0 0 }
 
 	#home .logoWrapper { margin: 0; display: block; position: relative; }
+	#home .logoWrapper { margin: 0; display: block; position: relative; }
 	#home .logoWrapper * { display: block; width: 100%; }
-	#home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 20px; padding: 30px; position: absolute; font-family: Limerick-Xlight; }
+	#home .logoWrapper img { max-width: 280px; }
+	#home .logoWrapper .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; text-decoration: none !important; margin-top: 10px; padding: 30px; position: absolute; font-family: Limerick-Xlight; }
 	#home .logoWrapper .btn-link:hover, #home .logoWrapper .btn-link:active, #home .logoWrapper .btn-link:focus { color: #495C69; }
 /************ END Section Home ************/
 
@@ -109,7 +110,7 @@
 	#images .carousel-item:first-child .item__third:first-child, 
 	#images .carousel-item:last-child .item__third:last-child { opacity: 0 } 
 
-	#images .show-neighbors .item__third > div { padding: 0 25px; }
+	/*#images .show-neighbors .item__third > div { padding: 0 25px; }*/
 	#images .show-neighbors .item__third:first-child > div:first-child { background: rgba(255, 255, 255, 0.3); }
 	#images .show-neighbors .item__third:last-child > div:first-child { background: rgba(255, 255, 255, 0.3); }
 	#images .show-neighbors .carousel-item-left .item__third > div, 
@@ -261,7 +262,7 @@
 	body .mainMenu .navbar-toggler { padding: 17px 17px; }
 	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 1.5em; height: 1.5em; }
 	body .mainMenu .navbar-nav { max-width: 800px; }
-	body .mainMenu .navbar-nav .nav-link { font-size: 16px; padding: 20px; }
+	body .mainMenu .navbar-nav .nav-link { font-size: 16px; line-height: initial; padding: 20px; }
 
 	#sideBarToggle { width: 260px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 20px 40px; font-size: 14px; }
