@@ -151,19 +151,25 @@
 /************ END Section Images ************/
 
 /************ START Section FloorPlans ************/
-	#floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
+	#floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); padding: 116px 158px; }
 	#floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
 	
-	#floorplans .tab-pane h2 { font-size: 80px; line-height: 67px; font-family: Limerick-Xlight; letter-spacing: 0px; }
+	#floorplans .tab-pane .floorDesc { border-right: 1px solid rgba(0,0,0,.1); padding-right: 60px; }
+	#floorplans .tab-pane h2 { font-size: 50px; line-height: 67px; font-family: Limerick-Xlight; letter-spacing: 0px; text-align: center; color: #43646D; }
+	#floorplans .tab-pane h2 small { text-transform: uppercase; font-size: 14px; line-height: initial; display: block; letter-spacing: 1.5px; margin-bottom: 30px; }
+	#floorplans .tab-pane li { list-style: none; display: block; float: left; width: 100%; }
+	#floorplans .tab-pane li span { font-size: 14px; line-height: initial; font-family: Limerick-Xlight; letter-spacing: 1.5px; color: #43646D; text-transform: uppercase; margin-bottom: 15px; }
+	#floorplans .tab-pane li hr { margin-top: 10px; margin-bottom: 25px; }
+	#floorplans .tab-pane img { padding-left: 45px; }
 
-	#floorplans .nav-pills .nav-link { border-radius: 0; border: 1px solid #43646D; color: #43646D; text-align: center; font-family: Limerick-Regular; font-size: 11px; line-height: 29px; letter-spacing: 1.1px; text-transform: uppercase; width: 160px; height: 40px; padding: 5px; outline: none; }
-	#floorplans .nav-pills .nav-link:nth-child(1) { transform: matrix(0.96, 0.28, -0.28, 0.96, 0, 0); }
-	#floorplans .nav-pills .nav-link:nth-child(2) { transform: matrix(0.96, 0.28, -0.28, 0.96, 0, 0); border-bottom: none; }
-	#floorplans .nav-pills .nav-link:nth-child(3) { transform: matrix(0.96, 0.28, -0.28, 0.96, -11, -3); border-bottom: none; }
-	#floorplans .nav-pills .nav-link:nth-child(4) { transform: matrix(0.96, 0.28, -0.28, 0.96, -22, -6); }
-	#floorplans .nav-pills .nav-link:nth-child(5) { transform: matrix(0.99, 0.1, -0.1, 0.99, -43, 40); border-bottom: none; }
-	#floorplans .nav-pills .nav-link:nth-child(6) { transform: matrix(0.99, 0.1, -0.1, 0.99, -47, 39); border-bottom: none; }
-	#floorplans .nav-pills .nav-link:nth-child(7) { transform: matrix(0.99, 0.1, -0.1, 0.99, -51, 38); }
+	#floorplans .nav-pills .nav-link { border-radius: 0; border: 1px solid #43646D; color: #43646D; text-align: center; font-family: Limerick-Regular; font-size: 11px; line-height: 24px; letter-spacing: 1.1px; text-transform: uppercase; width: 130px; height: 34px; padding: 5px; outline: none; }
+	#floorplans .nav-pills .nav-link:nth-child(1) { transform: rotate(-75deg) matrix(1, 0, 0, 1, -95, -85); width: 90px; }
+	#floorplans .nav-pills .nav-link:nth-child(2) { transform: rotate(19deg) matrix(1, 0, 0, 1, -15, -34); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(3) { transform: rotate(19deg) matrix(1, 0, 0, 1, -26, -32); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(4) { transform: rotate(19deg) matrix(1, 0, 0, 1, -37, -31); }
+	#floorplans .nav-pills .nav-link:nth-child(5) { transform: rotate(9deg) matrix(1, 0, 0, 1, -40, 0); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(6) { transform: rotate(9deg) matrix(1, 0, 0, 1, -45, 0); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(7) { transform: rotate(9deg) matrix(1, 0, 0, 1, -50, 0); }
 	#floorplans .nav-pills .nav-link.active, 
 	#floorplans .nav-pills .show > .nav-link { color: #fff; background-color: #43646D; }
 /************ END Section FloorPlans ************/
@@ -330,6 +336,10 @@
 	#specs h4 { padding-right: calc(100% - 445px); }
 	#specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
 	.tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
+
+	#floorplans { padding: 80px 90px 60px; }
+	#floorplans .tab-pane .floorDesc { padding-right: 30px; }
+	#floorplans .tab-pane img { padding-left: 15px; }
 
 	#inclusions { padding: 100px 90px; }
 	#inclusions .carousel { max-width: 400px; } 
