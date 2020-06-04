@@ -34,21 +34,23 @@
 
 /************ START Navigation ************/
 	body .mainMenu { padding: 0; }
-	body .mainMenu .navbar-toggler { display: block; position: absolute; right: 30px; top: 0; padding: 37px 37px; outline: none; }
-	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 2em; height: 2em; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(67, 100, 109, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 	body .mainMenu .navbar-nav { max-width: 900px; }
 	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 20px; line-height: 28px; padding: 39px 28px; transition: all 0.3s ease-out 0s; outline: none; }
 	body .mainMenu .navbar-nav .nav-link:hover, body .mainMenu .navbar-nav .nav-link:active, body .mainMenu .navbar-nav .nav-link:focus, body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
+	
+	body .navbar-toggler { position: absolute; right: 35px; top: 29px; width: 60px; height: 50px; padding: 10px; display: block !important; border: none; outline: none; }
+	body .navbar-toggler .icon-hamb { position: relative; width: 40px; height: 30px; display: block; }
+	body .navbar-toggler .icon-hamb span { background-color: #43646D; width: 40px; height: 2px; position: absolute; left: 0; }
+	body .navbar-toggler .icon-hamb span.hamb-top { top: 0; }
+	body .navbar-toggler .icon-hamb span.hamb-middle { top: 14px; }
+	body .navbar-toggler .icon-hamb span.hamb-bottom { top: 28px; }
 /************ END Navigation ************/
 
 /************ START Sidebar ************/
 	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 40px 0; background: #EEE3DB; transform: translateX(100%); transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
 	#sideBarToggle.toggled { transform: translateX(0); } 
-	#sideBarToggle .navbar-toggler { position: absolute; right: 0; top: -40px; width: 60px; height: 60px; padding: 17px 17px; } 
-	#sideBarToggle .navbar-toggler .hamb-top,
-	#sideBarToggle .navbar-toggler .hamb-bottom { background-color: #43646D; width: 1px; height: 30px; position: absolute; top: 15px; left: 30px; }
-	#sideBarToggle .navbar-toggler .hamb-top {  -webkit-transform: rotate(45deg); -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08); }
-	#sideBarToggle .navbar-toggler .hamb-bottom { -webkit-transform: rotate(-45deg); -webkit-transition: -webkit-transform .2s cubic-bezier(.73,1,.28,.08); }
+	#sideBarToggle .navbar-toggler .hamb-top { -webkit-transform: rotate(45deg); top: 15px; }
+	#sideBarToggle .navbar-toggler .hamb-bottom { -webkit-transform: rotate(-45deg); top: 15px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { font-family: Limerick-Xlight; padding: 25px 50px; font-size: 16px; cursor: pointer; }
 /************ END Sidebar ************/
 
@@ -64,14 +66,15 @@
 	#register::before { content: ""; background: #495c69; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 	#register::after { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: 0; }
 
-	.formSection .navbar-toggler { position: absolute; right: 0; top: 0; padding: 51px 63px; z-index: 9; outline: none; } 
+	.formSection .navbar-toggler { position: absolute; right: 0; top: 0; padding: 51px 63px; z-index: 9; width: auto; height: auto; } 
 	.formSection .navbar-toggler span { font-family: Limerick-Regular; font-size: 18px; line-height: 31px; letter-spacing: 0.72px; color: #43646D; text-transform: uppercase; }
 
 	.formSection h2 { letter-spacing: 2.72px; font-size: 34px; margin-bottom: 60px; }
 	.formSection .form-group { border-bottom: 30px; }
 	.formSection .colWrapper .form-group:first-child { padding-right: 25px; }
 	.formSection .colWrapper .form-group:last-child { padding-left: 25px; }
-	.formSection .form-control { letter-spacing: 1.6px; font-size: 16px; text-transform: uppercase; padding: 15px 0; background: transparent; border-radius: 0; border: none; border-bottom: 1px solid #495C69; line-height: 16px; height: auto; box-shadow: none !important; outline: none; }
+	.formSection .form-control { letter-spacing: 1.6px; font-size: 16px; text-transform: uppercase; color: #43646D; padding: 15px 0; background: transparent; border-radius: 0; border: none; border-bottom: 1px solid #495C69; line-height: 16px; height: auto; box-shadow: none !important; outline: none; }
+	.formSection .form-control::placeholder { color: #43646D; }
 	.formSection small { letter-spacing: 1.4px; font-size: 14px; padding: 28px 0; margin: 0; }
 	.formSection small a { color: inherit; text-decoration: underline; }
 	.formSection .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; padding: 28px 0; text-decoration: none !important; }
@@ -150,7 +153,17 @@
 /************ START Section FloorPlans ************/
 	#floorplans { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#495c69 50%,#495c69 100%); }
 	#floorplans::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
-	#floorplans .nav-pills .nav-link { border-radius: 0; border: 1px solid #43646D; color: #43646D; text-align: center; font-family: Limerick-Regular; font-size: 11px; line-height: 29px; letter-spacing: 1.1px; text-transform: uppercase; }
+	
+	#floorplans .tab-pane h2 { font-size: 80px; line-height: 67px; font-family: Limerick-Xlight; letter-spacing: 0px; }
+
+	#floorplans .nav-pills .nav-link { border-radius: 0; border: 1px solid #43646D; color: #43646D; text-align: center; font-family: Limerick-Regular; font-size: 11px; line-height: 29px; letter-spacing: 1.1px; text-transform: uppercase; width: 160px; height: 40px; padding: 5px; outline: none; }
+	#floorplans .nav-pills .nav-link:nth-child(1) { transform: matrix(0.96, 0.28, -0.28, 0.96, 0, 0); }
+	#floorplans .nav-pills .nav-link:nth-child(2) { transform: matrix(0.96, 0.28, -0.28, 0.96, 0, 0); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(3) { transform: matrix(0.96, 0.28, -0.28, 0.96, -11, -3); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(4) { transform: matrix(0.96, 0.28, -0.28, 0.96, -22, -6); }
+	#floorplans .nav-pills .nav-link:nth-child(5) { transform: matrix(0.99, 0.1, -0.1, 0.99, -43, 40); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(6) { transform: matrix(0.99, 0.1, -0.1, 0.99, -47, 39); border-bottom: none; }
+	#floorplans .nav-pills .nav-link:nth-child(7) { transform: matrix(0.99, 0.1, -0.1, 0.99, -51, 38); }
 	#floorplans .nav-pills .nav-link.active, 
 	#floorplans .nav-pills .show > .nav-link { color: #fff; background-color: #43646D; }
 /************ END Section FloorPlans ************/
@@ -277,12 +290,19 @@
 
 	body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
 
-	body .mainMenu .navbar-toggler { padding: 17px 17px; }
-	body .mainMenu .navbar-toggler .navbar-toggler-icon { width: 1.5em; height: 1.5em; }
+	body .navbar-toggler { right: 35px; top: 11px; width: 50px; height: 40px; }
+	body .navbar-toggler .icon-hamb { width: 30px; height: 20px; }
+	body .navbar-toggler .icon-hamb span { width: 30px; height: 2px; }
+	body .navbar-toggler .icon-hamb span.hamb-middle { top: 9px; }
+	body .navbar-toggler .icon-hamb span.hamb-bottom { top: 18px; }
+
 	body .mainMenu .navbar-nav { max-width: 800px; }
 	body .mainMenu .navbar-nav .nav-link { font-size: 16px; line-height: initial; padding: 20px; }
 
 	#sideBarToggle { width: 260px; }
+	#sideBarToggle .navbar-toggler { top: 10px; right: 10px; }
+	#sideBarToggle .navbar-toggler .hamb-top { top: 10px; }
+	#sideBarToggle .navbar-toggler .hamb-bottom { top: 10px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 20px 40px; font-size: 14px; }
 
 	#contact { padding: 100px 170px; }
