@@ -175,7 +175,7 @@
 /************ END Section FloorPlans ************/
 
 /************ START Section Specs ************/
-	#specs { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 210px 158px; }
+	#specs { background: #c7b4a6; padding: 210px 158px; }
 	#specs::before { content: ""; background: #eee3db; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 1000px 0 0 1000px; }
 	
 	body #specs .container-fluid { overflow-y: visible; }
@@ -328,7 +328,7 @@
 	#images .show-neighbors .carousel-inner { padding: 70px 0 90px }
 	#images .carousel-caption { bottom: -90px; height: 90px; }
 	#images .carousel-caption h5 { font-size: 20px; line-height: 26px; }
-	#images .carousel-caption p { letter-spacing: 1px; font-size: 11px; line-height: 16px; }
+	#images .carousel-caption p { letter-spacing: 0.8px; font-size: 12px; line-height: 14px;}
 	#images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
 	#specs { padding: 100px 90px; }
