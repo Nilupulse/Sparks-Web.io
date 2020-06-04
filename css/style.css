@@ -21,9 +21,9 @@
 	body section { position: relative; padding: 5%; overflow: hidden; }
 	/*body .container-fluid { overflow: hidden; }*/
 	body .row { z-index: 1; position: relative; }
-	body h4 { font-size: 20px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
+	body h4 { font-size: 18px; line-height: 40px; letter-spacing: 2px; color: #43646D; text-transform: uppercase; margin-bottom: 10px; }
 	body h5 { font-size: 14px; line-height: 40px; letter-spacing: 1.4px; color: #43646D; text-transform: uppercase; margin-bottom: 6px; font-family: Limerick-Xlight; }
-	body p { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; }
+	body p { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; font-family: Limerick-Xlight; }
 
 	body .btn { letter-spacing: 2.6px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
 	body .btn-secondary { background: #43646D; font-family: Limerick-Xlight; letter-spacing: 2px; }
