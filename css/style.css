@@ -290,9 +290,9 @@
 
 /*Large devices (desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
-	body h4 { font-size: 14px; line-height: 24px; }
+	body h4 { font-size: 16px; line-height: 24px; }
 	body h5 { font-size: 9px; line-height: 20px; }
-	body p { font-size: 12px; line-height: 20px; }
+	body p { font-size: 13px; line-height: 20px; }
 
 	body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
 
