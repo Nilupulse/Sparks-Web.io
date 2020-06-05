@@ -20,43 +20,41 @@ $(function () {
 			$('#policy').toggleClass('toggled');
 		}); 
 
-
-
-		$("#carouselGallery").on('slide.bs.carousel', function(evt) {
+		$('[data-spy="scroll"]').on('activate.bs.scrollspy', function (evt) {
 			var step = $(evt.relatedTarget).index();
-			if(step == 0) {
-				$('#carouselGallery .carousel-control-prev').fadeOut('3000');
-			} else {
-				$('#carouselGallery .carousel-control-prev').fadeIn('3000');
-			}
-			if(step == 4) {
-				$('#carouselGallery .carousel-control-next').fadeOut('3000');
-			} else {
-				$('#carouselGallery .carousel-control-next').fadeIn('3000');
-			}
-		});
-		$('#carouselGallery .carousel-control-prev').fadeOut('fast');
-		$('#carouselGallery').carousel({ interval: false });
+			console.log(step);
+		})
 
-		$("#carouselInclusions").on('slide.bs.carousel', function(evt) {
-			var step = $(evt.relatedTarget).index();
-			$('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
-				$('#caption-'+step).fadeIn('6000');
+		/* START Initialize Carousel */
+			$(".carousel").on('slide.bs.carousel', function(evt) {
+				var _this = $(this);
+				var step = $(evt.relatedTarget).index();
+				if(step == 0) {
+					_this.find('.carousel-control-prev').fadeOut('3000');
+				} else {
+					_this.find('.carousel-control-prev').fadeIn('3000');
+				}
+				if(step == 4) {
+					$('#carouselGallery .carousel-control-next').fadeOut('3000');
+				} else if(step == 5) {
+					$('#carouselInclusions .carousel-control-next').fadeOuts('3000');
+				} else {
+					_this.find('.carousel-control-next').fadeIn('3000');
+				}
 			});
-			if(step == 0) {
-				$('#carouselInclusions .carousel-control-prev').fadeOut('3000');
-			} else {
-				$('#carouselInclusions .carousel-control-prev').fadeIn('3000');
-			}
-			if(step == 5) {
-				$('#carouselInclusions .carousel-control-next').fadeOut('3000');
-			} else {
-				$('#carouselInclusions .carousel-control-next').fadeIn('3000');
-			}
-		});
-		$('#carouselInclusions .carousel-control-prev').fadeOut('fast');
+			$('.carousel .carousel-control-prev').fadeOut('fast');
 
-		$('#carouselInclusions').carousel({ interval: false });
+
+			$("#carouselInclusions").on('slide.bs.carousel', function(evt) {
+				var step = $(evt.relatedTarget).index();
+				$('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
+					$('#caption-'+step).fadeIn('6000');
+				});
+			});
+
+			$('#carouselGallery').carousel({ interval: false });
+			$('#carouselInclusions').carousel({ interval: false });
+		/* END Initialize Sliders */
 
 		$('[data-toggle="tooltip"]').tooltip();
 
