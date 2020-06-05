@@ -123,8 +123,8 @@
 	#images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 116px 158px 166px; }
 	#images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 
+	#images .carousel-indicators li { width: 8px; height: 8px; border-radius: 100%; }
 	#images .carousel-inner { overflow: visible; }
-
 	#images .carousel-item:first-child img { border-radius: 20px 0 0 20px; }
 	#images .carousel-item:last-child img { border-radius: 0 20px 20px 0; }
 	#images .carousel-item img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0s; } 
