@@ -130,7 +130,7 @@
 	#images .carousel-item img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0s; } 
 	#images .in-view .carousel-item.active img { -webkit-filter: grayscale(0); filter: grayscale(0); } 
 
-	#images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; }
+	#images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; transition: all 0.5s ease-out 0s; }
 	#images .carousel-item.active .carousel-caption { opacity: 1; }
 	#images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; font-family: Limerick-Xlight; }
 	#images .carousel-caption h5 small { display: block; font-size: 20px; line-height: 28px; letter-spacing: 0.4px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
@@ -285,7 +285,7 @@
 /*Large devices (desktops, less than 1400px)*/
 @media (max-width: 1399.98px) {
 	body h4 { font-size: 16px; line-height: 24px; }
-	body h5 { font-size: 9px; line-height: 20px; }
+	body h5 { font-size: 10px; line-height: 20px; }
 	body p { font-size: 13px; line-height: 20px; }
 
 	body .btn { font-size: 12px; line-height: 20px; padding: 12px 25px; }
@@ -347,7 +347,7 @@
 	#about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { padding: 27px; }
 	#about .card .card-footer { height: 105px; }
 	#about .card .card-footer .img-fluid { max-height: 35px; }
-	#about .copyrightText { font-size: 9px; line-height: 22px; }
+	#about .copyrightText { font-size: 10px; line-height: 22px; }
 
 }
 
