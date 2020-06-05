@@ -163,6 +163,7 @@
 	#floorplans .nav-pills .nav-link:nth-child(5) { transform: rotate(9deg) matrix(1, 0, 0, 1, -42, 0); border-bottom: none; }
 	#floorplans .nav-pills .nav-link:nth-child(6) { transform: rotate(9deg) matrix(1, 0, 0, 1, -46, 0); border-bottom: none; }
 	#floorplans .nav-pills .nav-link:nth-child(7) { transform: rotate(9deg) matrix(1, 0, 0, 1, -50, 0); }
+	#floorplans .nav-pills .nav-link:hover, #floorplans .nav-pills .nav-link:active, #floorplans .nav-pills .nav-link:focus { background-color: #7ca1a54f; }
 	#floorplans .nav-pills .nav-link.active, 
 	#floorplans .nav-pills .show > .nav-link { color: #fff; background-color: #7ca1a5; }
 	#floorplans .nav-pills > span { text-transform: uppercase; color: #43646D; transform: rotate(9deg) matrix(1, 0, 0, 1, -54, 0); font-size: 11px; letter-spacing: 1.1px; font-family: Limerick-Regular; line-height: 17px; padding: 5px; text-align: center; }
