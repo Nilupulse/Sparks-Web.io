@@ -411,6 +411,8 @@
 	#images .carousel-caption p { padding-left: 0; letter-spacing: 0.28px; font-size: 14px; line-height: 20px; }
 	#images .carousel-control-prev { width: 15%; left: 0; }
 	#images .carousel-control-next { width: 15%; right: 0; }
+	#images .carousel-control-prev-icon { background: url('../img/Gallery/arrow-left-mobile.png') no-repeat center center / 100% auto; }
+	#images .carousel-control-next-icon { background: url('../img/Gallery/arrow-right-mobile.png') no-repeat center center / 100% auto; }
 
 	#floorplans .nav-pills > span { transform: rotate(9deg) matrix(1, 0, 0, 1, -4, 0); }
 	#floorplans .tab-pane .floorDesc { padding-right: 15px; border: none; }
