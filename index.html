@@ -24,33 +24,36 @@
 	</head>
 
 	<body id="pageHome">
-		
+	
 		<!-- START Navigation -->
-		<nav class="navbar fixed-top navbar-expand-xl mainMenu animation-element" role="navigation">
-			<button class="navbar-toggler" type="button" data-toggle="offcanvas" data-target="sidebar" aria-controls="" aria-expanded="false" aria-label="">
+		<nav class="navbar fixed-top navbar-expand-xl mainMenu" role="navigation">
+			<button class="navbar-toggler animation-element" type="button" data-toggle="offcanvas" data-target="sidebar" aria-controls="" aria-expanded="false" aria-label="">
 				<span class="icon-hamb">
 					<span class="hamb-top"></span>
 					<span class="hamb-middle"></span>
 					<span class="hamb-bottom"></span>
 				</span>
 			</button>
-			<div class="container-fluid">
+			<div class="container-fluid animation-element">
 				<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
 					<ul class="navbar-nav w-100 justify-content-between">
 						<li class="nav-item">
-							<a class="nav-link" href="#home">Home</a>
+							<a class="nav-link" id="HomeNav" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#images">Images</a>
+							<a class="nav-link" id="ImageNav" href="#images">Images</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#floorplans">Floor Plans</a>
+							<a class="nav-link" id="FloorNav" href="#floorplans">Floor Plans</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#specs">Specs</a>
+							<a class="nav-link" id="SpecNav" href="#specs">Specs</a>
+						</li>
+						<li class="nav-item d-none">
+							<a class="nav-link" id="IncNav" href="#inclusions">Inclusions</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">About</a>
+							<a class="nav-link" id="AboutNav" href="#about">About</a>
 						</li>
 					</ul>
 				</div>
@@ -240,7 +243,7 @@
 		</section>
 		<!-- END Section Privacy Policy -->
 
-		<main class="Loop js-loop" data-spy="scroll" data-target=".mainMenu" data-offset="0">
+		<main class="Loop js-loop" data-spy="scroll" data-target=".mainMenu" data-offset="0">	
 			<!-- START Section Home -->
 			<section id="home" class="h-100 w-100 animation-element">
 				<div class="homeTopLeftBack animation-element"></div>				
