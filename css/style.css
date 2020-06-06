@@ -413,9 +413,9 @@
 
 	#floorplans .nav-pills > span { transform: rotate(9deg) matrix(1, 0, 0, 1, -4, 0); }
 	#floorplans .tab-pane .floorDesc { padding-right: 15px; border: none; }
-	#floorplans .tab-pane h2 { font-size: 45px; }
-	#floorplans .tab-pane h2 small { font-size: 16px; letter-spacing: 3.2px; opacity: 0.9; }
-	#floorplans .tab-pane li span { font-size: 16px; letter-spacing: 1.6px; }
+	#floorplans .tab-pane h2 { font-size: 40px; line-height: initial; margin-top: 20px; }
+	#floorplans .tab-pane h2 small { font-size: 16px; letter-spacing: 3.2px; opacity: 0.9; margin-bottom: 15px;  }
+	#floorplans .tab-pane li span { font-size: 14px; letter-spacing: 1.4px; margin-bottom: 10px; }
 	#floorplans .tab-pane li hr { margin-top: 0; margin-bottom: 15px; }
 	#floorplans .tab-pane img { padding-left: 0; }
 
