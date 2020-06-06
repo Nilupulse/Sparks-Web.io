@@ -1,3 +1,19 @@
+$(document).ready(function(){
+	$('#navbarNav .nav-link').each(function(){
+		if($(this).hasClass('active')) {
+			$('body').removeClass().addClass($(this).attr("id"));
+		}
+	});		
+	
+	$('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
+		$('#navbarNav .nav-link').each(function(){
+			if($(this).hasClass('active')) {
+				$('body').removeClass().addClass($(this).attr("id"));
+			}
+		});		
+	});
+});
+
 /* START Carousel */
 	$(function () {
 		$(document).ready(function(){
@@ -25,7 +41,7 @@
 					$('#captionGallery-'+step).fadeIn('6000');
 				});
 			});
-			
+
 			$("#carouselInclusions").on('slide.bs.carousel', function(evt) {
 				var step = $(evt.relatedTarget).index();
 				$('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
