@@ -409,8 +409,8 @@
 	#images .carousel-caption h5 { font-size: 26px; line-height: 40px; letter-spacing: 2.08px; padding-right: 0; margin-bottom: 10px; }
 	#images .carousel-caption h5 small { font-size: 16px; line-height: 28px; letter-spacing: 0.32px; opacity: 0.9; margin-top: -10px; }
 	#images .carousel-caption p { padding-left: 0; letter-spacing: 0.28px; font-size: 14px; line-height: 20px; }
-	#images .carousel-control-prev { width: 15%; left: 0; }
-	#images .carousel-control-next { width: 15%; right: 0; }
+	#images .carousel-control-prev { width: 15%; left: 0; opacity: 1; }
+	#images .carousel-control-next { width: 15%; right: 0; opacity: 1; }
 	#images .carousel-control-prev-icon { background: url('../img/Gallery/arrow-left-mobile.png') no-repeat center center / 100% auto; }
 	#images .carousel-control-next-icon { background: url('../img/Gallery/arrow-right-mobile.png') no-repeat center center / 100% auto; }
 
