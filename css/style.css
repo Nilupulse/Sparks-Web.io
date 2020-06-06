@@ -326,6 +326,7 @@
 	#home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
 
 	#images { padding: 60px 110px 90px; }
+	#images #gallery_captions { height: 90px; }
 	#images .carousel-caption h5 { font-size: 20px; line-height: 20px; }
 	#images .carousel-caption p { letter-spacing: 0.8px; font-size: 12px; line-height: 16px;}
 	#images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
