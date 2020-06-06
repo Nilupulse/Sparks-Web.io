@@ -436,6 +436,8 @@
 	#specs p { margin-bottom: 20px; }
 
 	#inclusions .carousel-caption { position: relative; top: 0; padding-bottom: 0; }
+	#inclusions .carousel-control-prev { opacity: 1; }
+	#inclusions .carousel-control-next { opacity: 1; }
 
 	#about { background: linear-gradient(to bottom, #eee3db 0%, #eee3db 75%, #495c69 75%, #495c69 100%); padding-bottom: 25px; }
 	#about::after { width: 100%; height: 25%; top: auto; bottom: 12.5%; }
