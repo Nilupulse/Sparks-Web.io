@@ -12,13 +12,20 @@
 				if(step == 4) {
 					$('#carouselGallery .carousel-control-next').fadeOut('3000');
 				} else if(step == 5) {
-					$('#carouselInclusions .carousel-control-next').fadeOuts('3000');
+					$('#carouselInclusions .carousel-control-next').fadeOut('3000');
 				} else {
 					_this.find('.carousel-control-next').fadeIn('3000');
 				}
 			});
 			$('.carousel .carousel-control-prev').fadeOut('fast');
 
+			$("#carouselGallery").on('slide.bs.carousel', function(evt) {
+				var step = $(evt.relatedTarget).index();
+				$('#gallery_captions .carousel-caption:not(#captionGallery-'+step+')').fadeOut('fast', function() {
+					$('#captionGallery-'+step).fadeIn('6000');
+				});
+			});
+			
 			$("#carouselInclusions").on('slide.bs.carousel', function(evt) {
 				var step = $(evt.relatedTarget).index();
 				$('#slider_captions .carousel-caption:not(#caption-'+step+')').fadeOut('fast', function() {
