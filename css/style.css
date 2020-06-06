@@ -38,26 +38,26 @@
 	body .mainMenu .navbar-nav .nav-link { color: #43646D; text-transform: uppercase; letter-spacing: 2.6px; font-size: 20px; line-height: 28px; padding: 39px 28px; transition: all 0.3s ease-out 0s; outline: none; }
 	body .mainMenu .navbar-nav .nav-link:hover, body .mainMenu .navbar-nav .nav-link:active, body .mainMenu .navbar-nav .nav-link:focus, body .mainMenu .navbar-nav .nav-link.active { color: #fff; }
 	
-	body .navbar-toggler { position: absolute; right: 35px; top: 29px; width: 60px; height: 50px; padding: 10px; display: block !important; border: none; outline: none; }
-	body .navbar-toggler .icon-hamb { position: relative; width: 40px; height: 30px; display: block; }
+	body .navbar-toggler { position: absolute; right: 35px; top: 32px; width: 60px; height: 44px; padding: 10px; display: block !important; border: none; outline: none; z-index: 1; }
+	body .navbar-toggler .icon-hamb { position: relative; width: 40px; height: 25px; display: block; }
 	body .navbar-toggler .icon-hamb span { background-color: #43646D; width: 40px; height: 2px; position: absolute; left: 0; }
 	body .navbar-toggler .icon-hamb span.hamb-top { top: 0; }
-	body .navbar-toggler .icon-hamb span.hamb-middle { top: 14px; }
-	body .navbar-toggler .icon-hamb span.hamb-bottom { top: 28px; }
+	body .navbar-toggler .icon-hamb span.hamb-middle { top: 11px; }
+	body .navbar-toggler .icon-hamb span.hamb-bottom { top: 22px; }
 /************ END Navigation ************/
 
 /************ START Sidebar ************/
-	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 40px 0; background: #EEE3DB; transform: translateX(100%); transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
+	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 70px 0 40px; background: #EEE3DB; transform: translateX(100%); transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
 	#sideBarToggle.toggled { transform: translateX(0); } 
-	#sideBarToggle .navbar-toggler .hamb-top { -webkit-transform: rotate(45deg); top: 15px; }
-	#sideBarToggle .navbar-toggler .hamb-bottom { -webkit-transform: rotate(-45deg); top: 15px; }
+	#sideBarToggle .navbar-toggler .hamb-top { -webkit-transform: rotate(45deg); top: 11px; }
+	#sideBarToggle .navbar-toggler .hamb-bottom { -webkit-transform: rotate(-45deg); top: 11px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { font-family: Limerick-Xlight; padding: 25px 50px; font-size: 16px; cursor: pointer; }
 /************ END Sidebar ************/
 
 /************ START Form Contact / Register ************/
 	.formSection { font-family: Limerick-Xlight; color: #43646D; text-transform: uppercase; }
-	#contact { background: linear-gradient(to bottom, #495c69 0%,#495c69 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 250px calc(50% - 673px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
-	#register { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 250px calc(50% - 397px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
+	#contact { background: linear-gradient(to bottom, #495c69 0%,#495c69 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 60px calc(50% - 673px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
+	#register { background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 60px calc(50% - 397px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
 	#contact.toggled, #register.toggled { opacity: 1; visibility: visible; }
 	
 	#contact::before { content: ""; background: #495c69; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
@@ -69,12 +69,12 @@
 	.formSection .navbar-toggler { position: absolute; right: 0; top: 0; padding: 51px 63px; z-index: 9; width: auto; height: auto; } 
 	.formSection .navbar-toggler span { font-family: Limerick-Regular; font-size: 18px; line-height: 31px; letter-spacing: 0.72px; color: #43646D; text-transform: uppercase; }
 
-	.formSection h2 { letter-spacing: 2.72px; font-size: 34px; margin-bottom: 60px; }
+	.formSection h2 { letter-spacing: 2.72px; font-size: 34px; margin: 44px 0 60px; }
 	.formSection .form-group { border-bottom: 30px; }
 	.formSection .colWrapper .form-group:first-child { padding-right: 25px; }
 	.formSection .colWrapper .form-group:last-child { padding-left: 25px; }
 	.formSection .form-control { letter-spacing: 1.6px; font-size: 16px; text-transform: uppercase; color: #43646D; padding: 15px 0; background: transparent; border-radius: 0; border: none; border-bottom: 1px solid #495C69; line-height: 16px; height: auto; box-shadow: none !important; outline: none; }
-	.formSection .form-control::placeholder { color: #43646D; }
+	.formSection .form-control::placeholder { color: #43646D; opacity: 0.5; }
 	.formSection small { letter-spacing: 1.4px; font-size: 14px; padding: 28px 0; margin: 0; }
 	.formSection small a { color: inherit; text-decoration: underline; }
 	.formSection .btn-link { letter-spacing: 2.6px; color: #43646D; font-size: 26px; line-height: 28px; padding: 28px 0; text-decoration: none !important; }
@@ -120,7 +120,7 @@
 /************ END Section Home ************/
 
 /************ START Section Images ************/
-	#images { background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); padding: 116px 158px 166px; }
+	#images { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#eee3db 50%,#eee3db 100%); padding: 116px 158px 166px; }
 	#images::before { content: ""; background: #c7b4a6; width: 100%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
 
 	#images .carousel-indicators li { width: 8px; height: 8px; border-radius: 100%; }
@@ -130,11 +130,13 @@
 	#images .carousel-item img { -webkit-filter: grayscale(100%); filter: grayscale(100%); transition: filter 0.5s ease-in-out 0s; } 
 	#images .in-view .carousel-item.active img { -webkit-filter: grayscale(0); filter: grayscale(0); } 
 
-	#images .carousel-caption { left: 0; bottom: -166px; text-align: left; height: 166px; opacity: 0; transition: all 0.5s ease-out 0s; }
-	#images .carousel-item.active .carousel-caption { opacity: 1; }
-	#images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 40px; margin: 0; font-family: Limerick-Xlight; }
+	#images #gallery_captions { position: relative; height: 166px; } 
+	#images .carousel-caption:not(#captionGallery-0) { display: none; }
+	#images .carousel-caption { position: relative; top: 0; left: 0; text-align: left; } 
+
+	#images .carousel-caption h5 { letter-spacing: 2.72px; font-size: 34px; line-height: 38px; margin: 0; font-family: Limerick-Xlight; white-space: nowrap; padding-right: 40px; border-right: 1px solid #EEE3DB; }
 	#images .carousel-caption h5 small { display: block; font-size: 20px; line-height: 28px; letter-spacing: 0.4px; text-transform: none; white-space: nowrap; margin-bottom: 0; opacity: 0.9; margin-top: 1px; }
-	#images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 25px; border-left: 1px solid #EEE3DB; padding-left: 40px; margin-left: 40px; margin-bottom: 0; }
+	#images .carousel-caption p { letter-spacing: 0.16px; font-size: 16px; line-height: 26px; padding-left: 40px; margin-bottom: 1px; }
 		
 	#images .carousel-control-prev { width: 90px; left: -90px; }
 	#images .carousel-control-next { width: 90px; right: -90px; }
@@ -163,7 +165,9 @@
 	#floorplans .nav-pills .nav-link:nth-child(5) { transform: rotate(9deg) matrix(1, 0, 0, 1, -42, 0); border-bottom: none; }
 	#floorplans .nav-pills .nav-link:nth-child(6) { transform: rotate(9deg) matrix(1, 0, 0, 1, -46, 0); border-bottom: none; }
 	#floorplans .nav-pills .nav-link:nth-child(7) { transform: rotate(9deg) matrix(1, 0, 0, 1, -50, 0); }
-	#floorplans .nav-pills .nav-link:hover, #floorplans .nav-pills .nav-link:active, #floorplans .nav-pills .nav-link:focus { background-color: #7ca1a54f; }
+	#floorplans .nav-pills .nav-link:hover, 
+	#floorplans .nav-pills .nav-link:active, 
+	#floorplans .nav-pills .nav-link:focus,
 	#floorplans .nav-pills .nav-link.active, 
 	#floorplans .nav-pills .show > .nav-link { color: #fff; background-color: #7ca1a5; }
 	#floorplans .nav-pills > span { text-transform: uppercase; color: #43646D; transform: rotate(9deg) matrix(1, 0, 0, 1, -54, 0); font-size: 11px; letter-spacing: 1.1px; font-family: Limerick-Regular; line-height: 17px; padding: 5px; text-align: center; width: 110px; }
@@ -299,17 +303,17 @@
 	body .mainMenu .navbar-nav { max-width: 800px; }
 	body .mainMenu .navbar-nav .nav-link { font-size: 16px; line-height: initial; padding: 20px; }
 
-	#sideBarToggle { width: 260px; }
+	#sideBarToggle { width: 260px; padding: 40px 0; }
 	#sideBarToggle .navbar-toggler { top: 10px; right: 10px; }
 	#sideBarToggle .navbar-toggler .hamb-top { top: 10px; }
 	#sideBarToggle .navbar-toggler .hamb-bottom { top: 10px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 20px 40px; font-size: 14px; }
 
-	#contact { padding: 100px 170px; }
-	#register { padding: 100px 270px; }
+	#contact { padding: 30px 170px; }
+	#register { padding: 30px 270px; }
 	.formSection .navbar-toggler { padding: 35px 50px; z-index: 9; outline: none; } 
 	.formSection .navbar-toggler span, .formSection .form-control { font-size: 14px; }
-	.formSection h2 { font-size: 32px; margin-bottom: 40px; }
+	.formSection h2 { font-size: 32px; margin: 44px 0 40px; }
 	.formSection .form-control { padding: 12px 0; }
 	.formSection small { font-size: 12px; }
 	.formSection .btn-link { font-size: 24px; }
@@ -322,9 +326,8 @@
 	#home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
 
 	#images { padding: 60px 110px 90px; }
-	#images .carousel-caption { bottom: -90px; height: 90px; }
-	#images .carousel-caption h5 { font-size: 20px; line-height: 26px; }
-	#images .carousel-caption p { letter-spacing: 0.8px; font-size: 12px; line-height: 14px;}
+	#images .carousel-caption h5 { font-size: 20px; line-height: 20px; }
+	#images .carousel-caption p { letter-spacing: 0.8px; font-size: 12px; line-height: 16px;}
 	#images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
 	#specs { padding: 100px 110px; }
@@ -367,6 +370,7 @@
 
 	.animation-element { transition: all 1s ease-out 0.2s !important; }
 
+	body .mainMenu { height: 40px; }
 	body .navbar-toggler { right: 0; top: 0; }
 
 	#sideBarToggle { width: 100%; background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); }
@@ -375,12 +379,17 @@
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 20px 40px; font-size: 16px; font-family: Limerick-Regular; letter-spacing: 3.2px; }
 
 	#contact, #register, #policy { padding: 25px 30px; min-height: 100%; }
-	#register { background: #EEE3DB; }
-	#contact::before, #register::before, #policy::before { content: none; }
+	#contact, #register { background: #EEE3DB; }
+	#contact::before, 	#register::before, #policy::before { content: none; }
+	#contact::after { background: #c7b4a6; border-radius: 0 1000px 1000px 0; }
 	#register::after { background: #D5AE9F; }
-	#contact .navbar-toggler, #register .navbar-toggler, #policy .navbar-toggler { padding: 25px 30px; }
-	#contact .navbar-toggler span, #register .navbar-toggler span, #policy .navbar-toggler span { font-size: 16px; line-height: initial; letter-spacing: 0.64px; }
-	#contact h2, #register h2, #policy h2 { font-size: 16px; margin-bottom: 15px; letter-spacing: 1.6px; line-height: 25px; }
+
+	.formSection .navbar-toggler, #policy .navbar-toggler { padding: 25px 30px; }
+	.formSection .navbar-toggler span, #policy .navbar-toggler span { font-size: 16px; line-height: initial; letter-spacing: 0.64px; }
+	.formSection h2, #policy h2 { font-size: 16px; margin: 0 0 20px; letter-spacing: 1.6px; line-height: 25px; }
+	.formSection .colWrapper .form-group:first-child { padding-right: 15px; }
+	.formSection .colWrapper .form-group:last-child { padding-left: 15px; }
+	.formSection .btn-link { font-size: 18px; padding: 24px 0; }
 
 	#home { background: linear-gradient(to bottom, #43646d 0%,#43646d 50%,#eee3db 50%,#eee3db 100%); padding: 25px 30px; height: 100% !important }
 	#home::before { content: none; }
@@ -389,14 +398,16 @@
 	#home .h-100 { height: 100% !important }
 	#home .logoWrapper img { padding: 0 calc(50% - 100px); max-width: initial; }
 
-	#images, #floorplans, #specs, #inclusions, #about { background: #eee3db; padding: 30px; }
+	#images, #floorplans, #specs, #inclusions, #about { background: #eee3db; padding: 25px 30px 45px; }
 	#images::before, #floorplans::before, #specs::before, #inclusions::before, #about::before { content: none; }
-
-	#images { padding: 25px 30px; }
+	#images #carouselGallery { height: 220px !important; }
+	#images #carouselGallery .h-100 { height: 100% !important; }
+	#images #gallery_captions { height: auto; }
+	#images .carousel-caption > .d-flex { display: block !important; }
 	#images .carousel-caption { position: relative; top: 0; padding-bottom: 0; height: auto; bottom: auto; }
-	#images .carousel-caption h5 { font-size: 26px; line-height: 40px; letter-spacing: 0.28px; }
-	#images .carousel-caption h5 small { font-size: 16px; line-height: 28px; letter-spacing: 0.32px; }
-	#images .carousel-caption p { padding-left: 0; margin-left: 0; letter-spacing: 0.28px; font-size: 14px; line-height: 20px; }
+	#images .carousel-caption h5 { font-size: 26px; line-height: 40px; letter-spacing: 2.08px; padding-right: 0; margin-bottom: 10px; }
+	#images .carousel-caption h5 small { font-size: 16px; line-height: 28px; letter-spacing: 0.32px; opacity: 0.9; margin-top: -10px; }
+	#images .carousel-caption p { padding-left: 0; letter-spacing: 0.28px; font-size: 14px; line-height: 20px; }
 	#images .carousel-control-prev { width: 15%; left: 0; }
 	#images .carousel-control-next { width: 15%; right: 0; }
 
@@ -423,7 +434,7 @@
 
 	#inclusions .carousel-caption { position: relative; top: 0; padding-bottom: 0; }
 
-	#about { background: linear-gradient(to bottom, #eee3db 0%, #eee3db 75%, #495c69 75%, #495c69 100%) }
+	#about { background: linear-gradient(to bottom, #eee3db 0%, #eee3db 75%, #495c69 75%, #495c69 100%); padding-bottom: 25px; }
 	#about::after { width: 100%; height: 25%; top: auto; bottom: 12.5%; }
 	#about .card { border-radius: 12px; overflow: hidden; }
 	#about .card .card-body { padding: 25px 20px; }
