@@ -380,6 +380,7 @@
 	body #navbarNav { display: block !important; }
 	body .mainMenu .navbar-nav { height: 50px; position: relative; }
 	body .fixed-top.mainMenu .navbar-nav .nav-link { visibility: hidden; opacity: 0; position: absolute; top: 0; padding: 15px 30px; pointer-events: none; transition: all 0.2s ease-out 0s; }
+	body.HomeNav .fixed-top.mainMenu .navbar-nav .nav-link { visibility: hidden !important; }
 	body .fixed-top.mainMenu .navbar-nav .nav-link.active { visibility: visible; opacity: 1; color: #43646D; }
 
 	#sideBarToggle { width: 100%; background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); }
