@@ -372,8 +372,8 @@
 
 	.animation-element { transition: all 1s ease-out 0.2s !important; }
 
-	body .fixed-top.mainMenu { height: 50px; /*background: #eee3db;*/ }
-	body.HomeNav .fixed-top.mainMenu { /*background: transparent;*/ }
+	body .fixed-top.mainMenu { height: 50px; background: #eee3db; }
+	body.HomeNav .fixed-top.mainMenu { background: transparent; }
 	body .navbar-toggler { right: 15px; top: 5px; }
 	body.ImageNav .navbar-toggler .icon-hamb span { background-color: #43646D; }
 	body.HomeNav .navbar-toggler .icon-hamb span { background-color: #fff; }
