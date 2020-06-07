@@ -48,8 +48,8 @@
 /************ END Navigation ************/
 
 /************ START Sidebar ************/
-	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 70px 0 40px; background: #EEE3DB; transform: translateX(100%); visibility: hidden; transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
-	#sideBarToggle.toggled { transform: translateX(0); visibility: visible; } 
+	#sideBarToggle { position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 310px; padding: 70px 0 40px; background: #EEE3DB; transform: translateX(100%); visibility: hidden; display: none; transition: all 0.5s ease-out 0s; box-shadow: 0 0 5px 1px rgba(000,000,000,.1); }
+	#sideBarToggle.toggled { transform: translateX(0); visibility: visible; display: block; } 
 	#sideBarToggle .navbar-toggler .hamb-top { -webkit-transform: rotate(45deg); top: 11px; }
 	#sideBarToggle .navbar-toggler .hamb-bottom { -webkit-transform: rotate(-45deg); top: 11px; }
 	#sideBarToggle .mainMenu .navbar-nav .nav-link { font-family: Limerick-Xlight; padding: 25px 50px; font-size: 16px; cursor: pointer; }
