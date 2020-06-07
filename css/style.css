@@ -13,7 +13,7 @@
 
 /************ START Common Styles ************/
 	html { scroll-behavior: smooth; overflow: hidden; }
-	html, body { height: 100%; }
+	html, body { height: 100%; width: 100%; }
 	body { color: #2b435d; font-size: 18px; font-family: Limerick-Regular; overflow: hidden; }
 	.Loop { position: relative; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: y mandatory; scroll-behavior: smooth; }
 	section { position: relative; text-align: left; height: 100%; scroll-snap-align: start; }
@@ -358,11 +358,6 @@
 
 /*Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
-
-}
-
-/*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
 	.Loop { scroll-snap-type: initial; }
 	body h4 { letter-spacing: 1.6px; }
 	body h5 { font-size: 14px; margin: 30px 0 10px; }
@@ -465,6 +460,11 @@
 	#about .card .card-footer .img-fluid { max-height: 60px; }
 	#about .copyrightText { color: #fff; font-size: 11px; line-height: 24px; text-align: left !important; }
 	#about .copyrightText a { border: none; display: block; padding: 0; margin: 0; }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+	
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
