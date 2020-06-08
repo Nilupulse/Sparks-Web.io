@@ -333,7 +333,7 @@
 	#images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
 	#specs { padding: 100px 110px; }
-	#specs .imageWrapper { width: 100px; height: 400px; }
+	#specs .imageWrapper { width: 100px; height: auto; }
 	#specs h4 { padding-right: calc(100% - 445px); }
 	#specs p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
 	.tooltip > .tooltip-inner { font-size: 10px; line-height: 20px; }
@@ -355,15 +355,20 @@
 	#about .copyrightText { font-size: 10px; line-height: 22px; }
 
 }
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#floorplans .tab-pane .floorDesc { border-right: none; padding-right: 0; }
+	#floorplans .tab-pane .floorDesc > div { border-right: 1px solid rgba(0,0,0,.1); padding-right: 30px; }
+	#floorplans .nav-pills .nav-link, #floorplans .nav-pills > span { width: 100px; }
+}
 
 /*Medium devices (tablets, less than 992px)*/
 @media (max-width: 991.98px) {
 	.Loop { scroll-snap-type: initial; z-index: 0; }
 	body h4 { letter-spacing: 1.6px; }
-	body h5 { font-size: 14px; margin: 30px 0 10px; }
+	body h5 { font-size: 14px; }
 	body p { font-size: 14px; letter-spacing: 0.28px; }
 	body .btn { font-size: 16px; padding: 20px 25px; width: 100%; }
-	.h-100 { height: auto !important; }
 
 	.animation-element { transition: all 1s ease-out 0.2s !important; }
 
@@ -377,6 +382,37 @@
 	body .fixed-top.mainMenu .navbar-nav .nav-link { visibility: hidden; opacity: 0; position: absolute; top: 0; padding: 15px 30px; pointer-events: none; transition: all 0.2s ease-out 0s; }
 	body.HomeNav .fixed-top.mainMenu .navbar-nav .nav-link { visibility: hidden !important; }
 	body .fixed-top.mainMenu .navbar-nav .nav-link.active { visibility: visible; opacity: 1; color: #43646D; }
+
+	#home, #images, #floorplans, #specs, #inclusions, #about { padding: 60px; height: 50% !important; }
+	#images { padding-bottom: 100px; }
+
+	#home::before { content: none; }
+	#home::after { z-index: 0; transition: all 1s ease-out 0s !important; }
+	#home .homeTopLeftBack, #home .homeBottomLeftBack { width: 100%; }
+	#home .homeTopLeftBack::before, #home .homeBottomLeftBack::before { height: 300%; transition: all 1s ease-out 1s !important; }
+	#home .homeBottomLeftBack::before { background: #eee3db; }
+	#home .homeTopRightBack, #home .homeBottomRightBack { display: none; }
+	body #navbarNav .animation-element { transition: all 1s ease-out 2s !important; }
+	#home .logoWrapper.animation-element { transition: all 1s ease-out 3s !important; }
+
+	#floorplans { padding-right: 20px; }
+	#floorplans .tab-pane h2 { font-size: 40px; line-height: initial; }
+	#floorplans .tab-pane h2 small { font-size: 14px; letter-spacing: 3.2px; opacity: 0.9; margin-bottom: 15px;  }
+	#floorplans .tab-pane li span { font-size: 12px; letter-spacing: 1.4px; margin-bottom: 10px; }
+	#floorplans .tab-pane li hr { margin-top: 0; margin-bottom: 15px; }
+
+	#specs .imageWrapper { width: 80px; }
+
+	#inclusions .carousel { max-width: 320px; }
+
+	#about .card h4 { margin-bottom: 10px; }
+	#about .card p { margin-bottom: 25px; }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+	body h5 { margin: 30px 0 10px; }
+	.h-100 { height: auto !important; }
 
 	#sideBarToggle { width: 100%; background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); }
 	#sideBarToggle::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: -1; }
@@ -410,19 +446,10 @@
 	.formSection p:last-child { margin-bottom: 0; }
 
 	#home { height: 100% !important }
-	#home::before { content: none; }
-	#home::after { z-index: 0; transition: all 1s ease-out 0s !important; }
-	#home .homeTopLeftBack, #home .homeBottomLeftBack { width: 100%; }
-	#home .homeTopLeftBack::before, #home .homeBottomLeftBack::before { height: 200%; transition: all 1s ease-out 1s !important; }
-	#home .homeBottomLeftBack::before { background: #eee3db; }
-	#home .homeTopRightBack, #home .homeBottomRightBack { display: none; }
-	body #navbarNav .animation-element { transition: all 1s ease-out 2s !important; }
-	#home .logoWrapper.animation-element { transition: all 1s ease-out 3s !important; }
-
 	#home .h-100 { height: 100% !important }
 	#home .logoWrapper img { padding: 0 calc(50% - 100px); max-width: initial; }
 
-	#images, #floorplans, #specs, #inclusions, #about { background: #eee3db; padding: 25px 30px 45px; }
+	#images, #floorplans, #specs, #inclusions, #about { background: #eee3db; padding: 25px 30px 45px; height: auto !important; }
 	#images::before, #floorplans::before, #specs::before, #inclusions::before, #about::before { content: none; }
 	#images #carouselGallery { height: 220px !important; }
 	#images #carouselGallery .h-100 { height: 100% !important; }
@@ -439,10 +466,9 @@
 
 	#floorplans .nav-pills > span { transform: rotate(9deg) matrix(1, 0, 0, 1, -4, 0); }
 	#floorplans .tab-pane .floorDesc { padding-right: 15px; border: none; }
-	#floorplans .tab-pane h2 { font-size: 40px; line-height: initial; margin-top: 20px; }
-	#floorplans .tab-pane h2 small { font-size: 16px; letter-spacing: 3.2px; opacity: 0.9; margin-bottom: 15px;  }
-	#floorplans .tab-pane li span { font-size: 14px; letter-spacing: 1.4px; margin-bottom: 10px; }
-	#floorplans .tab-pane li hr { margin-top: 0; margin-bottom: 15px; }
+	#floorplans .tab-pane h2 { margin-top: 20px; }
+	#floorplans .tab-pane h2 small { font-size: 16px; }
+	#floorplans .tab-pane li span { font-size: 14px; }
 	#floorplans .tab-pane img { padding-left: 0; }
 
 	#floorplans .pillWrapper { justify-content: center !important; }
@@ -458,6 +484,7 @@
 	#specs .imageWrapper { width: 25%; height: auto; margin-bottom: 20px; }
 	#specs p { margin-bottom: 20px; }
 
+	#inclusions .carousel { max-width: 100%; }
 	#inclusions .carousel-caption { position: relative; top: 0; padding-bottom: 0; }
 	#inclusions .carousel-control-prev { opacity: 1; }
 	#inclusions .carousel-control-next { opacity: 1; }
@@ -473,11 +500,6 @@
 	#about .card .card-footer .img-fluid { max-height: 60px; }
 	#about .copyrightText { color: #fff; font-size: 11px; line-height: 24px; text-align: left !important; }
 	#about .copyrightText a { border: none; display: block; padding: 0; margin: 0; }
-}
-
-/*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
-	
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
