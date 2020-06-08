@@ -409,15 +409,14 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
+	#contact, #register, #policy { padding: 60px 100px; }
+	#contact::before, #register::before, #policy::before, #about::before { width: 100%; left: -35%; }
+
 	#floorplans .tab-pane .floorDesc { border-right: none; padding-right: 0; }
 	#floorplans .tab-pane .floorDesc > div { border-right: 1px solid rgba(0,0,0,.1); padding-right: 30px; }
 	#floorplans .nav-pills .nav-link, #floorplans .nav-pills > span { width: 100px; }
 
-	#about { height: 100% !important; background: linear-gradient(to bottom, #eee3db 0%, #eee3db 50%, #495c69 50%, #495c69 100%); }
-	#about::before { content: none; }
-	#about::after { width: 100%; height: 50%; top: auto; bottom: 25%; }
-	#about .copyrightText { color: #fff; }
-	#about .copyrightText a { border-color: #fff; }
+	#about { height: 100% !important; }
 }
 
 /*Small devices (landscape phones, less than 768px)*/
