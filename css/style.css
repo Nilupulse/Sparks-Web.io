@@ -26,7 +26,8 @@
 	body p, body #about li { font-size: 18px; line-height: 31px; letter-spacing: 0.18px; color: #43646D; margin-bottom: 20px; font-family: Limerick-Xlight; }
 	body #about p br { line-height: initial; }
 	body #about ul { padding-left: 20px; margin-bottom: 20px; }
-	body #about li { margin-bottom: 10px; }
+	body #about li { margin-bottom: 12px; }
+	body #about li:last-child { margin-bottom: 0; }
 
 	body .btn { letter-spacing: 2.6px; text-transform: uppercase; padding: 18px 42px; font-size: 20px; line-height: 28px; border-radius: 100px; }
 	body .btn-secondary { background: #43646D; font-family: Limerick-Xlight; letter-spacing: 2px; }
