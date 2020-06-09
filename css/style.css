@@ -226,8 +226,8 @@
 	#about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { margin-right: 30px; padding: 46px 50px; }
 	#about .card .mCustomScrollbar .mCSB_draggerRail { width: 9px; background: #e5e5e5; margin-right: 0; }
 	#about .card .mCustomScrollbar .mCSB_dragger_bar { width: 9px; background: #c7b4a6; margin-right: 0; }
-	#about .card .col:first-child { padding-right: 20px; }
-	#about .card .col:last-child { padding-left: 20px; }
+	#about .card .col-xl-6:first-child { padding-right: 20px; }
+	#about .card .col-xl-6:last-child { padding-left: 20px; }
 	#about .card h4 { margin-bottom: 10px; }
 	#about .card p { margin-bottom: 40px; }
 	#about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
