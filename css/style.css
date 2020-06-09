@@ -228,8 +228,8 @@
 	#about .card .mCustomScrollbar .mCSB_dragger_bar { width: 9px; background: #c7b4a6; margin-right: 0; }
 	#about .card .col-xl-6:first-child { padding-right: 20px; }
 	#about .card .col-xl-6:last-child { padding-left: 20px; }
-	#about .card h4 { margin-bottom: 10px; }
-	#about .card p { margin-bottom: 40px; }
+	#about .card h4 { margin-bottom: 5px; }
+	#about .card p, #about .card ul { margin-bottom: 40px; }
 	#about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
 	#about .card .card-footer .img-fluid { max-height: 59px; }
 	#about .copyrightText { position: relative; color: #43646D; z-index: 2; margin: 10px 0 0; text-transform: uppercase; letter-spacing: 1.1px; font-size: 11px; line-height: 24px; font-family: Limerick-Xlight; }
