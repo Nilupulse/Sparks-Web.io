@@ -228,7 +228,7 @@
 	#about .card .mCustomScrollbar .mCSB_dragger_bar { width: 9px; background: #c7b4a6; margin-right: 0; }
 	#about .card .col:first-child { padding-right: 20px; }
 	#about .card .col:last-child { padding-left: 20px; }
-	#about .card h4 { margin-bottom: 15px; }
+	#about .card h4 { margin-bottom: 10px; }
 	#about .card p { margin-bottom: 40px; }
 	#about .card .card-footer { border-top: 1px solid #f0f0f0; background: #fff; padding: 18px 37px 25px 37px; height: 160px; }
 	#about .card .card-footer .img-fluid { max-height: 59px; }
@@ -406,7 +406,6 @@
 
 	#inclusions .carousel { max-width: 320px; }
 
-	#about .card h4 { margin-bottom: 10px; }
 	#about .card p, #about .card ul { margin-bottom: 25px; }
 }
 
@@ -507,7 +506,6 @@
 	#about .card { border-radius: 12px; overflow: hidden; }
 	#about .card .card-body { padding: 25px 20px; }
 	#about .card .mCustomScrollbar .mCSB_inside > .mCSB_container { padding: 0; margin: 0; }
-	#about .card h4 { margin-bottom: 10px; }
 	#about .card p, #about .card ul { margin-bottom: 20px; }
 	#about .card .card-footer { height: auto; }
 	#about .card .card-footer .img-fluid { max-height: 60px; }
