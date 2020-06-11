@@ -25,9 +25,9 @@ $(document).ready(function(){
 				} else {
 					_this.find('.carousel-control-prev').fadeIn('3000');
 				}
-				if(step == 4) {
+				if(step == 5) {
 					$('#carouselGallery .carousel-control-next').fadeOut('3000');
-				} else if(step == 5) {
+				} else if(step == 6) {
 					$('#carouselInclusions .carousel-control-next').fadeOut('3000');
 				} else {
 					_this.find('.carousel-control-next').fadeIn('3000');
