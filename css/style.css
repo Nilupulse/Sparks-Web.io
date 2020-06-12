@@ -212,7 +212,7 @@
 	#inclusions .carousel-caption { left: 0; right: 0; text-align: left; } 
 	#inclusions .carousel-control-prev-icon { background: url('../img/Inclusions/arrow-left.png') no-repeat center center / 100% auto; }
 	#inclusions .carousel-control-next-icon { background: url('../img/Inclusions/arrow-right.png') no-repeat center center / 100% auto; }
-	#inclusions h4 { padding-right: calc(100% - 639px); height: 68px; overflow: hidden; margin-bottom: 20px; }
+	#inclusions h4 { padding-right: calc(100% - 639px); height: 68px; overflow: hidden; }
 	#inclusions p { padding-right: calc(100% - 639px); height: 60px; overflow: hidden; margin-bottom: 55px; }
 /************ END Section Inclusions ************/  
 
