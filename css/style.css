@@ -98,6 +98,7 @@
 	#policy .navbar-toggler { position: absolute; right: 0; top: 0; padding: 51px 63px; z-index: 9; width: auto; height: auto; } 
 	#policy .navbar-toggler span { font-family: Limerick-Regular; font-size: 18px; line-height: 31px; letter-spacing: 0.72px; color: #43646D; text-transform: uppercase; }
 	#policy h2 { font-family: Limerick-Xlight; color: #43646D; font-size: 34px; line-height: 40px; letter-spacing: 2.72px; text-transform: uppercase; margin-bottom: 30px; }
+	#policy a { color: #2b435d; font-family: Limerick-Regular; }
 /************ END Section Privacy Policy ************/
 	 
 /************ START Section Home ************/
@@ -412,14 +413,14 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-	#contact, #register, #policy { padding: 60px 100px; }
+	/*#contact, #register, #policy { padding: 60px 100px; }
 	#contact::before, #register::before, #policy::before, #about::before { width: 100%; left: -35%; }
 
 	#floorplans .tab-pane .floorDesc { border-right: none; padding-right: 0; }
 	#floorplans .tab-pane .floorDesc > div { border-right: 1px solid rgba(0,0,0,.1); padding-right: 30px; }
 	#floorplans .nav-pills .nav-link, #floorplans .nav-pills > span { width: 100px; }
 
-	#about { height: 100% !important; }
+	#about { height: 100% !important; }*/
 }
 
 /*Small devices (landscape phones, less than 768px)*/
