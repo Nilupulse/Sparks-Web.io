@@ -212,8 +212,8 @@
 	#inclusions .carousel-caption { left: 0; right: 0; text-align: left; } 
 	#inclusions .carousel-control-prev-icon { background: url('../img/Inclusions/arrow-left.png') no-repeat center center / 100% auto; }
 	#inclusions .carousel-control-next-icon { background: url('../img/Inclusions/arrow-right.png') no-repeat center center / 100% auto; }
-	#inclusions h4 { padding-right: calc(100% - 639px); }
-	#inclusions p { padding-right: calc(100% - 639px); margin-bottom: 55px; }
+	#inclusions h4 { padding-right: calc(100% - 639px); height: 68px; overflow: hidden; margin-bottom: 20px; }
+	#inclusions p { padding-right: calc(100% - 639px); height: 60px; overflow: hidden; margin-bottom: 55px; }
 /************ END Section Inclusions ************/  
 
 /************ START Section About ************/
@@ -348,8 +348,8 @@
 
 	#inclusions { padding: 100px 110px; }
 	#inclusions .carousel { max-width: 400px; } 
-	#inclusions h4 { padding-right: calc(100% - 445px); }
-	#inclusions p { padding-right: calc(100% - 445px); margin-bottom: 35px; }
+	#inclusions h4 { padding-right: calc(100% - 455px); }
+	#inclusions p { padding-right: calc(100% - 455px); margin-bottom: 35px; }
 
 	#about { padding: 60px 110px; }
 	#about .card .card-body { max-height: calc(100% - 105px); }
