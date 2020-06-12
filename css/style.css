@@ -340,7 +340,7 @@
 	#images { padding: 60px 110px 90px; }
 	#images #gallery_captions { height: 90px; }
 	#images .carousel-caption h5 { font-size: 20px; line-height: 20px; }
-	#images .carousel-caption p { letter-spacing: 0.8px; font-size: 12px; line-height: 16px; max-width: 805px; }
+	#images .carousel-caption p { letter-spacing: 0.8px; font-size: 12px; line-height: 16px; max-width: 705px; }
 	#images .carousel-caption h5 small { font-size: 14px; line-height: 22px; letter-spacing: 1px; }
 
 	#specs { padding: 100px 110px; }
