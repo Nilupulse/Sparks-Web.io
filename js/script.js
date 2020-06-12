@@ -27,6 +27,7 @@ $(document).ready(function(){
 				}
 				if(step == 5) {
 					$('#carouselGallery .carousel-control-next').fadeOut('3000');
+					$('#carouselInclusions .carousel-control-next').fadeIn('3000');
 				} else if(step == 6) {
 					$('#carouselInclusions .carousel-control-next').fadeOut('3000');
 				} else {
