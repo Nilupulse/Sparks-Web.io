@@ -447,6 +447,7 @@
 	#contact .h-100, #register .h-100, #policy .h-100 { height: 100% !important; align-items: start !important; }
 	#contact > .container-fluid { height: 560px !important; }
 	#policy { padding: 25px 0 25px 30px; height: 100% !important; }
+	#policy .mCustomScrollbar { height: calc(100% - 30px) !important; }
 	#policy .innerPWrapper { padding-right: 30px; }
 	body ol { padding-left: 20px; }
 
