@@ -501,11 +501,11 @@
 	#sideBarToggle { width: 100%; background: linear-gradient(to bottom, #eee3db 0%,#eee3db 50%,#43646d 50%,#43646d 100%); }
 	#sideBarToggle::after { content: ""; background: #d5ae9f; width: 100%; height: 100%; position: absolute; top: 0; right: 0; border-radius: 1000px 0 0 1000px; z-index: -1; }
 	#sideBarToggle .mainMenu .navbar-nav { max-width: 100%; width: 100%; text-align: center; }
-	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 20px 40px; font-size: 16px; font-family: Limerick-Regular; letter-spacing: 3.2px; }
+	#sideBarToggle .mainMenu .navbar-nav .nav-link { padding: 18px 40px; font-size: 16px; font-family: Limerick-Regular; letter-spacing: 3.2px; }
 
 	#contact, #register { padding: 25px 30px; }
 	#contact::after { height: 584px; }
-	#contact > .container-fluid { height: 560px !important; }
+	#contact > .container-fluid { height: 560px !important; max-height: 150% !important; }
 	#policy { padding: 25px 0 25px 30px; }
 	.formSection h2, #policy h2 { font-size: 16px; margin: 0 0 20px; letter-spacing: 1.6px; line-height: 25px; }
 	#policy .innerPWrapper { padding-right: 30px; }
