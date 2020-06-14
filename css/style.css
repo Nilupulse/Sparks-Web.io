@@ -399,14 +399,14 @@
 	#contact::before, #register::before, #policy::before { content: none; }
 	#contact::after { background: #c7b4a6; border-radius: 0 1000px 1000px 0; height: calc(75% - 40px); }
 	#register::after { background: #D5AE9F; }
-	#contact .h-100, #register .h-100, #policy .h-100 { height: 100% !important; align-items: start !important; }
+	#contact .h-100, #register .h-100, #policy .h-100 { height: 100% !important; -ms-flex-align: start !important; align-items: flex-start !important; }
 	#contact > .container-fluid { height: 75% !important; }
 	#policy { padding: 80px 0 90px 90px; height: 100% !important; }
 	#policy .mCustomScrollbar { height: calc(100% - 30px) !important; }
 	#policy .innerPWrapper { padding-right: 90px; }
 	body ol { padding-left: 20px; }
 
-	.contactInfo { background: #fff; position: relative; padding: 30px 90px; z-index: 1; margin-left: -90px; margin-right: -90px; }
+	#contact .contactInfo { background: #fff; position: relative; padding: 30px 90px; z-index: 1; margin-left: -90px; margin-right: -90px; }
 
 	.formSection .navbar-toggler, #policy .navbar-toggler { padding: 25px 30px; }
 	.formSection .navbar-toggler span, #policy .navbar-toggler span { font-size: 16px; line-height: initial; letter-spacing: 0.64px; }
@@ -450,7 +450,9 @@
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 1024.98px) {
-
+	#contact .contactInfo { height: calc(25% + 80px); margin-bottom: -80px; }
+	#contact .contactInfo .h-100 { -ms-flex-align: center !important; align-items: center !important; }
+	
 	#images .carousel { height: auto !important; max-height: 100% !important; padding-bottom: 50px; }
 	#images .carousel-item { padding: 0 20px; }
 	#images .carousel-item img { height: auto !important; }
@@ -460,6 +462,7 @@
 	#floorplans .row .col-md-12.h-100:nth-child(1) { height: 25% !important; }
 	#floorplans .row .col-md-12.h-100:nth-child(2) { height: 75% !important; -ms-flex-align: start !important; align-items: flex-start !important; }
 	#floorplans .tab-pane .row .col-md-12.h-100:nth-child(1) { height: 40% !important; -ms-flex-align: end !important; align-items: flex-end !important; }
+	#floorplans .tab-pane .row .col-md-12.h-100:nth-child(1) > div { width: 100%; }
 	#floorplans #site-plan.tab-pane .row .col-md-12.h-100:nth-child(1) { display: none !important; }
 	#floorplans .tab-pane .row .col-md-12.h-100:nth-child(2) { height: 60% !important; -ms-flex-align: start !important; align-items: flex-start !important; }
 	#floorplans .nav-pills { margin: 0 auto; padding-left: 100px; }
