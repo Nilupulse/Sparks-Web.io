@@ -553,7 +553,7 @@
 	#contact > .container-fluid { height: 560px !important; max-height: 150% !important; }
 	#policy { padding: 25px 0 25px 30px; }
 	.formSection h2, #policy h2 { font-size: 16px; margin: 0 0 20px; letter-spacing: 1.6px; line-height: 25px; }	
-	.formSection .msgContent h2 { line-height: inherit; font-family: Limerick-Regular; }
+	.formSection .msgContent h2 { line-height: inherit; font-family: Limerick-Regular; font-size: 20px; }
 	#policy .innerPWrapper { padding-right: 30px; }
 
 	#contact .contactInfo { padding: 30px; margin-left: -30px; margin-right: -30px; margin-bottom: -25px; }
