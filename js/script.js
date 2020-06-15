@@ -65,8 +65,14 @@ $(document).ready(function(){
 			$('[data-toggle="offContact"]').click(function () {
 				$('#contact').toggleClass('toggled');
 			});  
+			$('[data-toggle="offContactSuccess"]').click(function () {
+				$('#contact').toggleClass('toggledMessage');
+			});  
 			$('[data-toggle="offRegister"]').click(function () {
 				$('#register').toggleClass('toggled');
+			});  
+			$('[data-toggle="offRegisterSuccess"]').click(function () {
+				$('#register').toggleClass('toggledMessage');
 			});   
 			$('[data-toggle="offPolicy"]').click(function () {
 				$('#policy').toggleClass('toggled');
