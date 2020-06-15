@@ -101,7 +101,7 @@
 /************ END Form Contact / Register ************/
 
 /************ START Section Privacy Policy ************/
-	#policy { font-family: Limerick-Xlight; background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 60px 0 60px calc(50% - 434px); position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
+	#policy { font-family: Limerick-Xlight; background: linear-gradient(to bottom, #d5ae9f 0%,#d5ae9f 50%,#c7b4a6 50%,#c7b4a6 100%); padding: 60px 0 60px 330px; position: absolute; right: 0; top: 0; z-index: 9999; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s; }
 	#policy.toggled { opacity: 1; visibility: visible; }
 	
 	#policy::before { content: ""; background: #495c69; width: 25%; height: 100%; position: absolute; top: 0; left: 0; border-radius: 0 1000px 1000px 0; }
@@ -110,11 +110,12 @@
 	#policy .navbar-toggler { position: absolute; right: 0; top: 0; padding: 51px 63px; z-index: 9; width: auto; height: auto; } 
 	#policy .navbar-toggler span { font-family: Limerick-Regular; font-size: 18px; line-height: 31px; letter-spacing: 0.72px; color: #43646D; text-transform: uppercase; }
 	#policy .mCustomScrollbar { height: calc(100% - 60px) !important; }
-	#policy .innerPWrapper { padding-right: calc(50% - 434px); }
+	#policy .innerPWrapper { padding-right: 330px; }
 	#policy .mCSB_inside > .mCSB_container { margin-right: 0; }
 	#policy .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background-color: #beb6af !important; }
 	#policy .mCSB_scrollTools .mCSB_draggerRail { background-color: transparent !important; }
 	#policy h2 { font-family: Limerick-Xlight; color: #43646D; font-size: 34px; line-height: 40px; letter-spacing: 2.72px; text-transform: uppercase; margin-bottom: 30px; }
+	#policy p:last-child { margin-bottom: 0; }
 	#policy a { color: #2b435d; font-family: Limerick-Regular; }
 /************ END Section Privacy Policy ************/
 	 
@@ -347,6 +348,8 @@
 	.formSection h5 { font-size: 14px; line-height: 21px; margin-bottom: 5px; }
 	.formSection p { font-size: 14px; line-height: 21px; margin-bottom: 35px; }
 
+	#policy { padding-left: 270px; }
+	#policy .innerPWrapper{ padding-right: 270px; }
 	#policy h2 { font-size: 32px; margin-bottom: 40px; }
 
 	#home .logoWrapper .btn-link { font-size: 16px; line-height: 18px; }
