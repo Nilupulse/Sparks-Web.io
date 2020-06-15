@@ -87,6 +87,17 @@
 	.formSection h4 { font-family: Limerick-Regular; letter-spacing: 0.8px; font-size: 20px; line-height: 40px; margin-bottom: 10px; }
 	.formSection h5 { font-family: Limerick-Regular; letter-spacing: 0.72px; font-size: 18px; line-height: 31px; margin-bottom: 10px; }
 	.formSection p { letter-spacing: 0.72px; font-size: 18px; line-height: 31px; margin-bottom: 55px; }
+
+	.formSection.toggled .container-fluid { position: relative; }
+	.formSection.toggled .mainContent { position: absolute; right: 0; top: 0; z-index: 1; height: 100%; width: 100%; opacity: 1; visibility: visible; transition: all 0.5s ease-out 0s; }
+	.formSection.toggled .msgContent { position: absolute; right: 0; top: 0; z-index: 1; height: 100%; width: 100%; opacity: 0; visibility: hidden; transition: all 0.5s ease-out 0s;; }
+	.formSection.toggledMessage .mainContent { opacity: 0; visibility: hidden; }
+	.formSection.toggledMessage .msgContent { opacity: 1; visibility: visible; }
+
+	.formSection .msgContent * { text-align: center; }
+	.formSection .msgContent p { margin-bottom: 0; }
+	.formSection .msgContent .navbar-toggler { position: relative; margin: 0 auto; }
+	.formSection.toggledMessage > .navbar-toggler { visibility: hidden; }
 /************ END Form Contact / Register ************/
 
 /************ START Section Privacy Policy ************/
